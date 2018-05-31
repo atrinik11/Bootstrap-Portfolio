@@ -1,0 +1,21 @@
+nav h3{
+  display:block;
+  background-color:teal;
+  color:white;
+}
+section, #intro{
+  height100%
+  }
+
+footer{
+  border-display:solid;
+  border-top:5px;
+  border-coloe:teal;
+  padding:20px 0;
+}
+footer p{
+  align-self:center;
+}
+a .btn{
+  vertical-align:bottom;
+}
