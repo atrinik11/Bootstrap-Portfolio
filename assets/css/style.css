@@ -1,21 +1,83 @@
-nav h3{
-  display:block;
-  background-color:teal;
-  color:white;
+html{
+  height:100%;
 }
-section, #intro{
-  height100%
-  }
+body{
+    height:100vh;
+    }
 
-footer{
-  border-display:solid;
-  border-top:5px;
-  border-coloe:teal;
+.container-fluid{
+  border-color:grey;
+  border-style:solid;
+  padding:0;
+}
+
+nav{
+  border-bottom-style:solid;
+  border-bottom-color:lightgrey;
+}
+
+.container h3{
+  display:block;
+  background-color:#4aaaa5;
+  color:white;
+  height:100%;
   padding:20px 0;
 }
-footer p{
+#intro{
+  width:100%;
+  height:auto;
+  background: url(../images/canvas-texture-paper.jpg)no-repeat center center fixed;
+  -webkit-background-size:cover;
+  -moz-background-size:cover;
+  -o-background-size:cover;
+  background-size:cover;
+}
+
+section .container{
+  border-style:solid;
+  margin:auto;
+  /*margin-top:20px;*/
+  border-color:transparent;
+  background-color:white;
+  width:auto;
+}
+.container h4{ color:#4aaaa5;}
+
+img{
+  display:block;
+  width:auto;
+  height:100%;
+  margin-right:20px;
+}
+.mt-auto{
+  width:auto;
   align-self:center;
+  /*display:block;*/
+  background-color: #4aaaa5;
 }
-a .btn{
-  vertical-align:bottom;
+a{
+  color:white;
+  text-align:center;
+  text-decoration: none;
 }
+.row{
+  margin:20px;
+}
+button{
+  background-color:#4aaaa5;
+  color:white;
+}
+.footer {
+      border-top:5px;
+      border-top-style:solid;
+      border-top-color:#4aaaa5;
+      height: 60px;
+      margin-right:60px;
+      bottom: 0;
+      color:white;
+      width: 100%;
+      padding-top:20px;
+      background-color: grey;
+      text-align:center;
+      padding:0 0 5px 0;
+    }
