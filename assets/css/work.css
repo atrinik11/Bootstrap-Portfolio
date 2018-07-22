@@ -1,0 +1,100 @@
+#top-row{
+    background-color : rgb(182, 170, 170);
+    font-family: 'Contrail One', cursive;
+    height : 150px;
+    font-size : 35px;
+    text-align : center;
+}
+
+h1 {
+    font-size : 35px;
+    margin-top :45px;
+}
+
+#home {
+    float : right;
+    margin-right : 25px;
+    color :  rgb(54, 36, 36);
+    text-decoration: none;
+}
+
+.image {
+    background-color : rgb(236, 59, 53);
+}
+
+.circle {
+    position : relative;
+    margin-top : 150px;
+    margin-left : 60px;
+    height : 380px;
+    width : 380px;
+    border-radius: 50%;
+    background-color : rgb(182, 170, 170);
+}
+
+.circle:after {
+    content : "";
+    padding-bottom : 100%;
+    display: block;
+}
+
+#positioning{
+    display : block;
+    border : none;
+    background-color: transparent;
+    position : absolute;
+    margin-left : 30%;
+    margin-top : 45%;
+}
+
+.circle1, .circle2, .circle3, .circle4, .circle5, .circle6 {
+    position : relative;
+    margin-top : 50px;
+    height : 150px;
+    width : 150px;
+    border-radius: 50%;
+    background-color : rgb(182, 170, 170);
+   cursor : pointer;
+}
+
+.circle1, .circle2, .circle3 {
+    margin-left : 350px;
+}
+
+.circle4, .circle5, .circle6 {
+    margin-right : 10px;
+}
+
+.circle3, .circle6 {
+    margin-bottom : 40px;
+    padding-bottom : 40px;
+}
+
+.circle:after {
+    content : "";
+    padding-bottom : 100%;
+    display: block;
+}
+
+.pos1, .pos2, .pos3, .pos4, .pos5, .pos6 {
+    display : block;
+    border : none;
+    background-color: transparent;
+    position : absolute;
+    margin-left : 30%;
+    margin-top : 40%;
+}
+
+a {
+    font-size : 20px;
+    text-decoration: none;
+    color : rgb(54, 36, 36);
+}
+
+#footer{
+    background-color : rgb(182, 170, 170);
+    font-family: 'Contrail One', cursive;
+    height : 150px;
+    font-size : 35px;
+    text-align : center;
+}

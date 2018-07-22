@@ -1,0 +1,139 @@
+#top-row{
+    background-color : rgb(182, 170, 170);
+    font-family: 'Contrail One', cursive;
+    height : 150px;
+    font-size : 35px;
+    text-align : center;
+}
+
+h1 {
+    font-size : 35px;
+    margin-top :45px;
+}
+
+#home {
+    float : right;
+    margin-right : 25px;
+    color :  rgb(54, 36, 36);
+    text-decoration: none;
+}
+
+.image {
+    background-color : rgb(236, 59, 53);
+}
+
+.circle {
+    position : relative;
+    margin-left : 60px;
+    height : 380px;
+    width : 380px;
+    border-radius: 50%;
+    background-color : rgb(182, 170, 170);
+}
+
+.circle:after {
+    content : "";
+    padding-bottom : 100%;
+    display: block;
+}
+
+#positioning{
+    display : block;
+    border : none;
+    background-color: transparent;
+    position : absolute;
+    margin-left : 30%;
+    margin-top : 40%;
+}
+
+.circle1, .circle2, .circle3, .circle4 {
+    position : relative;
+    margin-top : 50px;
+    height : 160px;
+    width : 160px;
+    border-radius: 50%;
+    background-color :  rgb(182, 170, 170);
+    cursor : pointer;
+}
+
+.circle1, .circle3 {
+    margin-left : 350px;
+}
+
+.circle2, .circle4{
+    margin-right : 10px;
+    padding-bottom : 30px;
+}
+
+.circle:after {
+    content : "";
+    padding-bottom : 100%;
+    display: block;
+}
+
+.circle1 {
+    background-image : url(../images/github.png);
+    background-size : contain;
+    background-repeat: no-repeat;
+}
+
+.circle2 {
+    background-image : url(../images/linkedin_logo.jpg);
+    display : block; 
+    background-size : contain;
+    background-repeat: no-repeat;
+}
+
+.circle3 {
+    background-image : url(../images/Facebook_logo-7.png);
+    background-size : contain;
+    background-repeat: no-repeat;
+}
+
+.circle4 {
+    background-image : url(../images/email.png);
+    background-size : contain;
+    background-repeat: no-repeat;
+}
+a {
+    margin-top : 50px;
+    margin-left : 10px;
+    font-size : 20px;
+    text-decoration: none;
+    color : white;
+}
+
+
+
+.pos1, .pos2, .pos3, .pos4{
+    display : block;
+    border : none;
+    background-color: transparent;
+    position : absolute;
+}
+
+.pos1 {
+    margin-left : 25%;
+    margin-top : 45%;
+}
+.pos2{
+    margin-left : 25%;
+    margin-top : 55%;
+}
+.pos3 {
+    margin-left : 18%;
+    margin-top : 45%;
+}
+
+.pos4 {
+    margin-left : 30%;
+    margin-top : 55%;
+}
+
+#footer {
+    background-color : rgb(182, 170, 170);
+    font-family: 'Contrail One', cursive;
+    height : 50px;
+    font-size : 35px;
+    text-align : center;
+}
