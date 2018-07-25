@@ -6,6 +6,8 @@
         <!-- Link for the font style -->
         <link href="https://fonts.googleapis.com/css?family=Contrail+One|Philosopher" rel="stylesheet">
 
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
         <!--Link to the bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
@@ -21,29 +23,49 @@
             </div>
             </div>
             <div class = "image">
-                <div class = "row">
+                <div class = "row" id = "work-page">
                     <div class = "col-md-4">
-                    <div class = "row">
-                        <div class = "circle1">
-                            <div class = "pos1">
-                                <a href = "https://atrinik11.github.io/Fun-Finder/"><h6>Fun-Finder</h6></a>
+                        <div class = "row">
+                            <div class = "circle1">
+                                <div class = "pos1" id ="fun">
+                                    <h5>Fun-Finder</h5>
+                                    <div class = "link1">
+                                        <a href = "https://atrinik11.github.io/Fun-Finder/">Deploy Link</a>
+                                    </div>
+                                    <div class = "link2">
+                                        <a href = "https://github.com/atrinik11/Fun-Finder">Code link</a>
+                                    </div>
+                                    
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class = "row">
-                        <div class = "circle2">
-                            <div class = "pos2">
-                                <a href="https://atrinik11.github.io/GifTastic/"><h6>GifTastic</h6></a>
+                        <div class = "row">
+                            <div class = "circle2">
+                                <div class = "pos2">
+                                    <h5>GifTastic</h5>
+                                    <div class = "link5">
+                                        <a href="https://atrinik11.github.io/GifTastic/">DeployLink</a>
+                                    </div>
+                                    <div class = "link6">
+                                        <a href = "https://github.com/atrinik11/GifTastic">Codelink</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class = "row">
-                        <div class = "circle3">
-                            <div class = "pos3">
-                                <a href = "https://atrinik11.github.io/Psychi-Game/"><h6>Psychi-Game</h6></a>
-                            </div>
+                        <div class = "row">
+                            <div class = "circle3">
+                                <div class = "pos3">
+                                    <h5>Psychi-Game</h5>
+                                    <div class = "link1">
+                                        <a href = "https://atrinik11.github.io/Psychi-Game/">Deploy Link</a>
+                                    </div>
+                                    <div class = "link2">
+                                        <a href = "https://github.com/atrinik11/Psychi-Game">Code link</a>
+                                    </div>
+                                    
+                                </div>
+                            </div>  
                         </div>
-                    </div>
                     </div>
                     <div class = "col-md-4">
                     <div class = "circle">
@@ -60,21 +82,41 @@
                     <div class = "row">
                         <div class = "circle4">
                             <div class = "pos4">
-                                <a href="https://atrinik11.github.io/Train-Scheduler-/"><h6>Train-Scheduler</h6></a>
+                                <h5>Train-Scheduler</h5>
                             </div>
+                            <div class = "link3">
+                                <a href="https://atrinik11.github.io/Train-Scheduler-/">Deploy Link</a>
+                            </div>
+                            <div class = "link4">
+                                <a href = "https://github.com/atrinik11/Train-Scheduler-">Code link</a>
+                            </div>
+                                
                         </div>
                     </div>
                     <div class = "row">
                         <div class = "circle5">
                             <div class = "pos5">
-                                <a href = "https://atrinik11.github.io/unit-4-game/"><h6>Unit-4-Game</h6></a>
+                                <h5>Unit-4-Game</h5>
+                                <div class = "link1">
+                                    <a href = "https://atrinik11.github.io/unit-4-game/">Deploy Link</a>
+                                </div>
+                                <div class = "link2">
+                                    <a href = "https://github.com/atrinik11/unit-4-game">Code link</a>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
                     <div class = "row">
                         <div class = "circle6">
                             <div class = "pos6">
-                                <a href="https://atrinik11.github.io/TriviaGame/"><h6>TriviaGame</h6></a>
+                                <h5>TriviaGame</h5>
+                                <div class = "link1">
+                                    <a href="https://atrinik11.github.io/TriviaGame/">Deploy Link</a>
+                                </div>
+                                <div class = "link2">
+                                    <a href = "https://github.com/atrinik11/TriviaGame">Code link</a>
+                                </div>                              
                             </div>
                         </div>
                     </div>
@@ -90,11 +132,19 @@
                 </div>
             </div>
         </div>
+        <!--Codes for modal window which will display the links to the codes and github   -->
+        <div id = "modal-window" class = "modal1">
+            <div id = "modal2" class = "modal-message"></div>
+            <button onclick = "deployLink()">GitHub Deploy Link</button>
+            <button onclick = "codeLink()">GitHub Code Link</button>
+            <button>Cancel</button>
+        </div>
 
       <!--Optional JavaScript-->
       <!--JQuery first,  then Popper.js then Bootstrap JS-->
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      <!-- <script src = "assets/javascript/app.js"></script> -->
     </body>
 </html>

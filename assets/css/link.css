@@ -24,6 +24,7 @@ h1 {
 
 .circle {
     position : relative;
+    background : url("../images/useful-links.png");
     margin-left : 60px;
     height : 380px;
     width : 380px;
@@ -43,7 +44,7 @@ h1 {
     background-color: transparent;
     position : absolute;
     margin-left : 30%;
-    margin-top : 40%;
+    margin-top : 85%;
 }
 
 .circle1, .circle2, .circle3, .circle4 {
@@ -54,6 +55,7 @@ h1 {
     border-radius: 50%;
     background-color :  rgb(182, 170, 170);
     cursor : pointer;
+    box-shadow: 4px 0 2px 8px 0 rgba(0,0, 0, .2);
 }
 
 .circle1, .circle3 {
@@ -88,12 +90,14 @@ h1 {
     background-image : url(../images/Facebook_logo-7.png);
     background-size : contain;
     background-repeat: no-repeat;
+    margin-bottom: 20px;
 }
 
 .circle4 {
     background-image : url(../images/email.png);
     background-size : contain;
     background-repeat: no-repeat;
+    margin-bottom: 20px;
 }
 a {
     margin-top : 50px;
