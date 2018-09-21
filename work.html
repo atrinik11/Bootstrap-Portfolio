@@ -1,166 +1,458 @@
 <!Doctype html>
 <html>
     <head>
-        <title>My Work</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Reena's Work</title>
+        <meta charset = "utf-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+        <meta name = "Reena Mahapatra" content = "Portfolio">
         <!-- Link for the font style -->
         <link href="https://fonts.googleapis.com/css?family=Contrail+One|Philosopher" rel="stylesheet">
-
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
-
         <!--Link to the bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-        <!--Link to the css file-->
-        <link rel="stylesheet" type="text/css" href="assets/css/work.css">
+        <!-- Link for devicon icons -->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        <!-- Link to font awesome -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+        <!-- Theme style  -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <!-- Modernizr JS -->
+        <!-- <script src="js/modernizr-2.6.2.min.js"></script> -->
+        <!-- FOR IE9 below -->
+        <!--[if lt IE 9]>
+        <script src="js/respond.min.js"></script>
+        <![endif]-->
     </head>
     <body>
-        <div class="container-fluid">
-            <div class="row" id = "top-row">
-            <div class = "col-md-12" >
-                <h1>Hi! I'm Reena Mahapatra</h1>
-                <a href = "index.html" id = "home"><h4>Home</h4></a>
-            </div>
-            </div>
-            <div class = "image">
-                <div class = "row" id = "work-page">
-                    <div class = "col-md-4">
-                        <div class = "row">
-                            <div class = "circle1">
-                                <div class = "pos1" id ="fun">
-                                    <h5>Fun-Finder</h5>
-                                    <div class = "link1">
-                                        <a href = "https://atrinik11.github.io/Fun-Finder/">Deploy Link</a>
-                                    </div>
-                                    <div class = "link2">
-                                        <a href = "https://github.com/atrinik11/Fun-Finder">Code link</a>
-                                    </div>
-
-                                </div>
-                            </div>
+        <div id = "page">
+            <div class = "main" style = "background-color:rgb(19, 236, 226);">
+                <div class="container top">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <div id="myname"><a href="index.html">Reena Mahapatra.</a></div>
                         </div>
-                        <div class = "row">
-                            <div class = "circle2">
-                                <div class = "pos2">
-                                    <h5>GifTastic</h5>
-                                    <div class = "link5">
-                                        <a href="https://atrinik11.github.io/GifTastic/">DeployLink</a>
-                                    </div>
-                                    <div class = "link6">
-                                        <a href = "https://github.com/atrinik11/GifTastic">Codelink</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class = "row">
-                            <div class = "circle3">
-                                <div class = "pos3">
-                                    <h5>Psychi-Game</h5>
-                                    <div class = "link1">
-                                        <a href = "https://atrinik11.github.io/Psychi-Game/">Deploy Link</a>
-                                    </div>
-                                    <div class = "link2">
-                                        <a href = "https://github.com/atrinik11/Psychi-Game">Code link</a>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "col-md-4">
-                        <div class = "row">
-                                <div class = "circle">
-                                        <div id = "positioning">
-                                      <div class = "row" id ="one">
-                                        <div class = "col-md-12">
-                                          <h2><span>My Work</span></h2>
+                        <nav class="nav" role="navigation">
+                            <div class="col-xs-8 text-right menu-1">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li class = "active"><a href="work.html">Work</a></li>
+                                    <li><a href="tools.html">Skills</a></li>
+                                    <li class="nav-item has-dropdown">
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            Links
+                                        </a>
+                                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                            <a class="dropdown-item" href="https://www.linkedin.com/in/rmahapatra" target="_blank">Linkedin</a>
+                                            <a class="dropdown-item" href="https://github.com/atrinik11" target = "_blank">GitHub</a>
+                                            <a class = "dropdown-item" href = "https://www.facebook.com/reena.mahapatra" target = "_blank">Facebook</a>
+                                            <a class="dropdown-item" href = "mailto:reenm2017@gmail.com">Email</a>
                                         </div>
-                                  </div>
-                              </div>
+                                    </li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
                             </div>
-                        </div>
-                        <div class = "row">
-                          <div class = "row">
-                            <div class = "circle7">
-                              <div class = "pos7">
-                                <h5>BAMAZON APP</h5>
-                                <div class = "link1">
-                                  <a href = "https://github.com/atrinik11/Bamazon">Code link</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class = "row">
-                            <div class = "circle8">
-                              <div class = "pos8">
-                                <h5>FRIEND FINDER</h5>
-                                <div class = "link7">
-                                  <a href = "https://serene-caverns-84461.herokuapp.com/">Code link</a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-
-                    </div>
-                    <div class = "col-md-4">
-                    <div class = "row">
-                        <div class = "circle4">
-                            <div class = "pos4">
-                                <h5>Train-Scheduler</h5>
-                            </div>
-                            <div class = "link3">
-                                <a href="https://atrinik11.github.io/Train-Scheduler-/">Deploy Link</a>
-                            </div>
-                            <div class = "link4">
-                                <a href = "https://github.com/atrinik11/Train-Scheduler-">Code link</a>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class = "circle5">
-                            <div class = "pos5">
-                                <h5>Unit-4-Game</h5>
-                                <div class = "link1">
-                                    <a href = "https://atrinik11.github.io/unit-4-game/">Deploy Link</a>
-                                </div>
-                                <div class = "link2">
-                                    <a href = "https://github.com/atrinik11/unit-4-game">Code link</a>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class = "row">
-                        <div class = "circle6">
-                            <div class = "pos6">
-                                <h5>LIRI BOT</h5>
-                                <div class = "link1">
-                                    <a href = "https://github.com/atrinik11/liri-node-app">Code link</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
+                        </nav>
                     </div>
                 </div>
+                <header id = "header" class = "cover">
+                    <!-- <div class="overlay"></div> -->
+                    <div class="container" id = "main-heading">
+                        <div class="row">
+                            <div class="col-md-12 col-md-offset-2 text-center">
+                                <h1>Full Stack Developer</h1>
+                                <h3 style = "color:white;">My Work</h3>
+                            </div>
+                        </div>
+                    </div>
+                </header>   
+            </div>  
+            <div class = "main-scroll">
+                    <div id="project">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-4" id = "fun">
+                                        <div class="project-grid" style="background-image:url(assets/images/fun1.jpg);">
+                                            <div class="desc" id = "fun-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#fun-finder">Fun Finder</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" id = "gif">
+                                        <div class="project-grid" style="background-image:url(assets/images/gif.jpg);">
+                                            <div class="desc" id = "gif-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#gif-tastic">GifTastic</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" id = "psychic">
+                                        <div class="project-grid" style="background-image:url(assets/images/letter.png);">
+                                            <div class="desc" id = "psychic-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#psychic-game">Psychic Game</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" id = "bamazon1">
+                                        <div class="project-grid" style="background-image:url(assets/images/bamazon.jpg);">
+                                            <div class="desc" id = "bamazon1-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#bamazon">Bamazon</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" id = "friend">
+                                        <div class="project-grid" style="background-image:url(assets/images/friendfinder.png);">
+                                            <div class="desc" id = "friend-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#friend-finder">Friend Finder</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" id = "train">
+                                        <div class="project-grid" style="background-image:url(assets/images/train.png);">
+                                            <div class="desc" id = "train-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#train-sch">Train Scheduler</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" id = "crystal">
+                                        <div class="project-grid" style="background-image:url(assets/images/crystal.jpg);">
+                                            <div class="desc" id = "crystal-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#unit4-game">Unit4-Game</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" id = "liri1">
+                                        <div class="project-grid" style="background-image:url(assets/images/liri.png);">
+                                            <div class="desc" id = "liri1-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#liri">Liri Bot</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" id = "cat">
+                                        <div class="project-grid" style="background-image:url(assets/images/catering.jpg);">
+                                            <div class="desc" id = "cat-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#catering">Catering App</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4" id = "burger1">
+                                        <div class="project-grid" style="background-image:url(assets/images/burger1.png);">
+                                            <div class="desc" id = "burger1-pop">
+                                                <span>Application</span>
+                                                <h3><a href="#burger">Burger</a></h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                    
+                                </div>
+                            </div>
+                        </div>    
+                        <div id="started">
+                            <div class="container project-details">
+                                <div id = "fun-finder">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 heading">
+                                            <h2 class = "text-center">Fun Finder</h2>
+                                            <p>This application i've developed for people to make their their vacation organized and stress free. Using the Google Maps markers, users can see and select which place they would like to visit and add them to their to-do list which can be saved and used as refferance during the vacation.</p>
+                                            <h4>Technologies Used:</h4>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>BootStrap, CSS</li>
+                                                <li>JavaScript, Jquery</li>
+                                                <li>Firebase Database</li>
+                                                <li>Google Maps</li>
+                                                <li>Flickr</li>
+                                            </ul>
+                                            <h4>Links to Codes and App:</h4>
+                                            <ul>
+                                                <li><a href = "https://atrinik11.github.io/Fun-Finder/" style = "color: white;">Deploy Link</a></li>
+                                                <li><a href = "https://github.com/atrinik11/Fun-Finder" style = "color: white;">Code link</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class = "col-md-2"></div>
+                                    </div>
+                                    <div>
+                                        <div class = "gototop js-top">
+                                            <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id = "gif-tastic">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 heading">
+                                            <h2 class = "text-center">GifTastic</h2>
+                                            <p>Using the GIPHY API to make a dynamic web page that populates with gifs of my choice. To finish this task, I have to call the GIPHY API and use JavaScript and jQuery to change the HTML of my site.</p>
+                                            <h4>Technologies Used:</h4>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>BootStrap, CSS</li>
+                                                <li>JavaScript, Jquery</li>
+                                                <li>API</li>
+                                                <li>AJAX</li>
+                                            </ul>
+                                            <h4>Links to Codes and App:</h4>
+                                            <ul>
+                                                <li>
+                                                    <a href="https://atrinik11.github.io/GifTastic/" style = "color: white;">Deploy Link</a>
+                                                </li>
+                                                <li>
+                                                    <a href = "https://github.com/atrinik11/GifTastic" style = "color: white;">Code link</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class = "col-md-2"></div>
+                                    </div>
+                                    <div>
+                                        <div class = "gototop js-top">
+                                            <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id = "psychic-game">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 col-md-offset-2 heading">
+                                            <h2 class = "text-center">Psychic Game</h2>
+                                            <p>This Psychic Game i've developed is a simple JavaScript game that allows you to guess the letter the computer chooses. You have to choose a letter from A - Z and test your psycic ability to see if you can read a computers mind!.</p>
+                                            <h4>Technologies Used:</h4>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>BootStrap, CSS</li>
+                                                <li>JavaScript</li>
+                                            </ul>
+                                            <h4>Links to Codes and App:</h4>
+                                            <ul>
+                                                <li><a href = "https://atrinik11.github.io/Psychi-Game/" style = "color:white;">Deploy Link</a></li>
+                                                <li><a href = "https://github.com/atrinik11/Psychi-Game" style = "color:white;">Code link</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class = "col-md-2"></div>
+                                    </div>
+                                    <div class = "gototop js-top">
+                                        <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                    </div>
+                                </div>
+                                <div id = "bamazon">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 col-md-offset-2 heading">
+                                                <h2 class = "text-center">Bamazon</h2>
+                                                <p>Creating an Amazon-like storefront with the MySQL database. The app will take in orders from customers and deplete stock from the store's inventory.</p>
+                                                <h4>Technologies Used:</h4>
+                                                <ul>
+                                                   <li>JavaScript</li>
+                                                   <li>Node JS</li>
+                                                   <li>MySQL Database</li>
+                                                </ul>
+                                                <h4>Links to Codes and App:</h4>
+                                                <ul>
+                                                    <li><a href = "https://github.com/atrinik11/Bamazon" style = "color: white;">Code link</a></li>
+                                                </ul>
+                                            </div>
+                                        <div class = "col-md-2"></div>
+                                    </div>
+                                    <div class = "gototop js-top">
+                                        <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                    </div>
+                                </div>
+                                <div id = "friend-finder">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 col-md-offset-2 heading">
+                                            <h2 class = "text-center">Friend Finder</h2>
+                                            <p>I have build a compatibility-based "Friend Finder" application -- basically and only a friend finder app. This full-stack site will take in results from the users' surveys, then compare their answers with those from other users which is in the friends.js file of the application. The application will then display the name and picture of the user with the best overall match. And the current user details like name, phot url, and the scores will be added to the friend list in friend.js file of the application. The application has been deployed in Heroku.</p>
+                                            <h4>Technologies Used:</h4>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>Bootstrap, CSS</li>
+                                                <li>JavaScript</li>
+                                                <li>Node JS</li>
+                                                <li>Express JS</li>
+                                            </ul>
+                                            <h4>Links to Codes and App:</h4>
+                                            <ul>
+                                                <li><a href =  "https://serene-caverns-84461.herokuapp.com/"style = "color: white;">Heroku Link</a></li>
+                                                <li><a href = "https://github.com/atrinik11/Friend-finder" style = "color: white;">Code Link</a></li>
+                                            </ul>
+                                        </div>
+                                    <div class = "col-md-2"></div>
+                                </div>
+                                <div class = "gototop js-top">
+                                    <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                </div>
+                                </div>
+                                <div id = "train-sch">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 col-md-offset-2 heading">
+                                            <h2 class = "text-center">Train Scheduler</h2>
+                                            <p>Created a train schedule application that incorporates Firebase to host arrival and departure data. The app will retrieve and manipulate this information with Moment.js. This website will provide up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.</p>
+                                            <h4>Technologies Used:</h4>
+                                                <ul>
+                                                    <li>HTML</li>
+                                                    <li>BootStrap, CSS</li>
+                                                    <li>JavaScript</li>
+                                                    <li>jQuery</li>
+                                                    <li>Firebase API</li>
+                                                    <li>Node JS</li>
+                                                    <li>Moment JS</li>
+                                                </ul>
+                                                <h4>Links to Codes and App:</h4>
+                                                <ul>
+                                                    <li><a href = "https://atrinik11.github.io/Train-Scheduler-/" style = "color: white;">Deploy Link</a></li>
+                                                    <li><a href = "https://github.com/atrinik11/Train-Scheduler-" style = "color: white;">Code Link</a></li>
+                                                </ul>
+                                            </div>
+                                        <div class = "col-md-2"></div>
+                                    </div>
+                                    <div class = "gototop js-top">
+                                        <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                    </div>
+                                </div>
+                                <div id = "unit4-game">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 col-md-offset-2 heading">
+                                            <h2 class = "text-center">Unit4-Game</h2>
+                                            <p> This project is basically a guess game where a random number is generated and there are 4 crystals where also 4 random numbers are generated but is hidden from user. The aim of the game is that the user has to match the random number shown on the screen by clicking the 4 crystals. If the user number matches the screen number then the user wins and if the user number exceeds the screen number then the user losses the game.</p>
+                                            <h4>Technologies Used:</h4>
+                                            <ul>
+                                                <li>HTML</li>
+                                                <li>BootStrap, CSS</li>
+                                                <li>JavaScript</li>
+                                            </ul>
+                                            <h4>Links to Codes and App:</h4>
+                                            <ul>
+                                                <li><a href = "https://atrinik11.github.io/unit-4-game/" style = "color: white;">Deploy Link</a></li>
+                                                <li><a href = "https://github.com/atrinik11/unit-4-game" style = "color: white;">Code link</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class = "col-md-2"></div>
+                                    </div>
+                                    <div class = "gototop js-top">
+                                        <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                    </div>
+                                </div>
+                                <div id = "liri">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 col-md-offset-2 heading">
+                                            <h2 class = "text-center">Liri Bot</h2>
+                                            <p>LIRI is a Language Interpretation and Recognition Interface. LIRI will be a command line node app that takes in parameters and gives you back data. LIRI will display the latest tweets, movies details,song/album/artist details. The data collected from the server will also be stored in a file called log.txt.</p>
+                                            <h4>Technologies Used:</h4>
+                                            <ul>
+                                                <li>JavaScript</li>
+                                                <li>Node JS</li>
+                                                <li>API- Twitter API, Spotify API</li>
+                                                <li>Library- request, dotenv</li>
+                                                <li>File System</li>
+                                            </ul>
+                                            <h4>Links to Codes and App:</h4>
+                                            <ul>
+                                                <li><a href = "https://github.com/atrinik11/liri-node-app" style = "color: white;">Code link</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class = "col-md-2"></div>
+                                    </div>
+                                    <div class = "gototop js-top">
+                                        <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                    </div>
+                                </div>
+                                <div id = "catering">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 col-md-offset-2 heading">
+                                            <h2 class = "text-center">Catering App</h2>
+                                            <p>Catering App was developed to enhance communication and organization within a small team.
+                                            Using a centralized work space, all team members are able to view the most up-to-date information.
+                                            Having accurate information available amongst team members promotes cohesiveness and mitigates miscommunication within a group. Team members are able to create, update, and/or delete any event with the collective approval from the team. When a new event is created or updates are made to an existing event, a notification is sent via email to all team members for viewing and approval.
+                                            With intuitive functionality, this application makes shared work flow within a small team easy and efficient.</p>
+                                            <h4>Technologies Used:</h4>
+                                            <ul>
+                                                <li>BootStrap, CSS</li>
+                                                <li>JavaScript, jQuery</li>
+                                                <li>Node JS</li>
+                                                <li>MySQL Database</li>
+                                                <li>Heroku, JAWSDB, MVC</li>
+                                                <li>dotenv-json, Express, Handlebars</li>
+                                                <li>Sequelize</li>
+                                                <li>npm Nodemailer Package</li>
+                                            </ul>
+                                            <h4>Links to Codes and App:</h4>
+                                            <ul>
+                                                <li><a href = "https://cater-app.herokuapp.com/" style = "color: white;">Deploy Link</a></li>
+                                                <li><a href = "https://github.com/atrinik11/project2" style = "color: white;">Code link</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class = "col-md-2"></div>
+                                    </div>
+                                    <div class = "gototop js-top">
+                                        <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                    </div>
+                                </div>
+                                <div id = "burger">
+                                    <div class = "row">
+                                        <div class = "col-md-2"></div>
+                                        <div class="col-md-8 col-md-offset-2 heading">
+                                            <h2 class = "text-center">Devor the Burger</h2>
+                                            <p>A Node, Express, Handlebars, and MySQL burger app that lets users input the names of burgers they'd like to eat... and then devour them! </p>
+                                            <h4>Technologies Used:</h4>
+                                            <ul>
+                                                <li>Bootstrap, CSS</li>
+                                                <li>JavaScript, jQuery</li>
+                                                <li>Node JS</li>
+                                                <li>ORM</li>
+                                                <li>Handlebars</li>
+                                                <li>MySQL Database</li>
+                                                <li>Heroku, JAWSDB</li>
+                                                <li>MVC</li>
+                                            </ul>
+                                            <h4>Links to Codes and App:</h4>
+                                            <ul>
+                                                <li><a href = " https://salty-lowlands-10174.herokuapp.com/" style = "color: white;">Heroku Link</a></li>
+                                                <li><a href = "https://github.com/atrinik11/Burgers" style = "color: white;">Code Link</a></li>
+                                            </ul>
+                                        </div>
+                                        <div class = "col-md-2"></div>
+                                    </div>
+                                    <div class = "gototop js-top">
+                                        <a href = "#page" class = "js-gotop"><i class="fas fa-arrow-circle-up"></i></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    <div class="footer" style = "background-image: url(assets/images/bg1.jpg);"></div>
+                <footer id="footer" role="contentinfo" style = "background-color: rgba(114, 230, 224, 0.658);">
+                    <div class="container">
+                        <div class="row copyright">
+                            <div class="col-md-12 text-center">
+                                <p>
+                                    <small class="block">&copy; Rights Reserved.</small><br>
+                                    <small class="block">Designed by <a href="index.html">Reena Mahapatra</a>
+                                    </small>
+                                </p>
+                                <p>
+                                    <ul class="icons">
+                                        <li><a href="https://github.com/atrinik11" target="_blank"><i class="devicon-github-plain-wordmark colored"></i></a></li>
+                                        <li><a href="https://www.facebook.com/reena.mahapatra" target="_blank"><i class="devicon-facebook-plain colored"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/rmahapatra" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                        <li><a href="mailto:reenm2017@gmail.com"><i class="fas fa-at"></i></a></li>
+                                    </ul>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </div>
-
-
-            <div class="footer">
-                <div class="row" id = "footer">
-
-                </div>
-            </div>
-        </div>
-        <!--Codes for modal window which will display the links to the codes and github   -->
-        <div id = "modal-window" class = "modal1">
-            <div id = "modal2" class = "modal-message"></div>
-            <button onclick = "deployLink()">GitHub Deploy Link</button>
-            <button onclick = "codeLink()">GitHub Code Link</button>
-            <button>Cancel</button>
         </div>
 
       <!--Optional JavaScript-->
@@ -168,6 +460,6 @@
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-      <!-- <script src = "assets/javascript/app.js"></script> -->
+      <script src = "assets/javascript/app.js"></script>
     </body>
 </html>

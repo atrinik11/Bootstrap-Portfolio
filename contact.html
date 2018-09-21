@@ -1,25 +1,71 @@
 <!Doctype html>
 <html>
-    <head>
-      <title>Contact Page</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-      <link rel="stylesheet" type="text/css" href="assets/css/index.css">
-    </head>
-    <body>
-      <div class="container-fluid">
-        <div class="row" id = "top-row">
-          <div class = "col-md-12" >
-            <h1>Reena Mahapatra : Full Stack Developer</h1>
-            <a href = "index.html" id = "home"><h4>Home</h4></a>
+  <head>
+    <meta charset = "utf-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <title>Reena's Portfolio</title>
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <meta name = "Reena Mahapatra" content = "Portfolio">
+    <!-- Link for devicon icons -->
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <!-- Link for fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <!-- Link for the font style -->
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One|Philosopher" rel="stylesheet">
+    <!--Link to the bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!--Link to the css file-->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  </head>
+  <body>
+    <div id = "page">
+      <div class = "main" style = "background-color:rgb(19, 236, 226);">
+        <div class="container top">
+          <div class="row">
+            <div class="col-xs-4">
+              <div id="myname"><a href="index.html">Reena Mahapatra.</a></div>
+            </div>
+            <nav class="nav" role="navigation">
+              <div class="col-xs-8 text-right menu-1">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="work.html">Work</a></li>
+                  <li><a href="tools.html">Skills</a></li>
+                  <li class="nav-item has-dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Links
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="https://www.linkedin.com/in/rmahapatra" target="_blank">Linkedin</a>
+                      <a class="dropdown-item" href="https://github.com/atrinik11" target = "_blank">GitHub</a>
+                      <a class = "dropdown-item" href = "https://www.facebook.com/reena.mahapatra" target = "_blank">Facebook</a>
+                      <a class="dropdown-item" href = "mailto:reenm2017@gmail.com">Email</a>
+                    </div>
+                  </li>
+                  <li class = "active"><a href="contact.html">Contact</a></li>
+                </ul>
+              </div>
+            </nav>
           </div>
         </div>
+        <header id = "header" class = "cover">
+          <!-- <div class="overlay"></div> -->
+            <div class="container" id = "main-heading">
+              <div class="row">
+                <div class="col-md-12 col-md-offset-2 text-center">
+                  <h1>Full Stack Developer</h1>
+                  <h3 style = "color:white;">Contact Form</h3>
+                </div>
+              </div>
+            </div>
+          </header>   
+        </div>  
         <section id="intro" class="view">
          <div class="full-bg-img">
            <div class="container padding">
                 <h4 class="display-5">Contact</h4>
                 <hr>
-                <form action="/action_page.php">
+                <form action = "MAILTO:reenam2017@gmail.com" method = "post" enctype ="text/plain">
                   <div class="form-group">
                     <label for="user">Full Name</label>
                     <input type="text" class="form-control" id="user">
@@ -32,15 +78,33 @@
                     <label for="comment">Message</label>
                     <textarea class="form-control" rows="7" id="commet"></textarea>
                   </div>
-                <button type="submit" class="btn btn-lg"> Submit</button>
+                <button type="submit" class="btn btn-lg" style = "background-color: rgba(114, 230, 224, 0.7);"> Submit</button>
               </form>
             </div>
           </div>
         </section>
-        <div id ="footer">
-           
-        </div>
       </div>
+      <div class="footer" style = "background-image: url(assets/images/bg1.jpg);"></div>
+      <footer id="footer" role="contentinfo" style = "background-color: rgba(114, 230, 224, 0.658);">
+          <div class="container">
+              <div class="row copyright">
+                  <div class="col-md-12 text-center">
+                      <p>
+                          <small class="block">&copy; Rights Reserved.</small><br>
+                          <small class="block">Designed by <a href="index.html">Reena Mahapatra</a></small>
+                      </p>
+                      <p>
+                        <ul class="icons">
+                          <li><a href="https://github.com/atrinik11" target="_blank"><i class="devicon-github-plain-wordmark colored"></i></a></li>
+                          <li><a href="https://www.facebook.com/reena.mahapatra" target="_blank"><i class="devicon-facebook-plain colored"></i></a></li>
+                          <li><a href="https://www.linkedin.com/in/rmahapatra" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                          <li><a href="mailto:reenm2017@gmail.com"><i class="fas fa-at"></i></a></li>
+                        </ul>
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </footer>
       <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
