@@ -270,9 +270,12 @@ nav ul li.active > a {
     display: inline-block;
     zoom: 1;
     *display: inline;
-    color: #0C9CEE;
+    color: rgba(169, 169, 169, 1);
     padding: 0 6px;
     margin-bottom: 5px;
+}
+.icons li a:hover, .icon li a:hover {
+    color: #fff;
 }
 .icons li a i{
     font-size: 12px;
@@ -719,7 +722,7 @@ nav ul li.active > a {
     #footer p {
         margin: 10px 7px;
         padding: 10px 7px 10px;
-        font-size: 20px;
+        font-size: 23px;
     }
     #footer ul li {
         margin: 10px 7px;
@@ -731,17 +734,15 @@ nav ul li.active > a {
     #footer {
         height: 130px;
     }
-    /* .footer ul icons {
-        margin-top: 10px;
-        height: 20px;
-    } */
     ul .icons li {
         /* margin-top: 10px; */
         text-align: center;
     }
-    ul .icons li a i{
+    .icons li a i{
         display: inline-block;
-        font-size: 13px;
+        font-size: 18px;
     }    
-    
+    .icons li a i:hover{
+        font-size: 20px;
+    }  
 } 
