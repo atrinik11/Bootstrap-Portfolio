@@ -182,60 +182,24 @@ $(document).ready(function() {
         $("#liri").hide();
         $("#catering").hide();
         $("#burger").hide();
-    })
-    $(window).scroll(function() {
-        var scrollTop = $(window).scrollTop();
-        if(scrollTop > 49) {
-            $('body').addClass('header-fixed');
-        } else {
-            $('body').removeClass('header-fixed');
-        }
     });
-    //For responsive nav bar
-    function myFunction() {
-        var x = $("")
-    }
 
-
-    // $("#fun").on("click", function() {
-    //     console.log("Fun finder was clicked");
-    //     $("#work-page").hide();
-    //     $("#modalwindow").css("display", "block");
-    //     console.log("modal windows shows up");
-
-    //     function DeployLink() {
-            
-    //     }
-    //     $.expr[":"].external = function(a) {
-    //         var linkhn = a.hostname.split('.').reverse();
-    //         var linkhnHref = linkhn[1] + "." + linkhn[0];
-
-    //         var domainhn = window.location.hostname.split(".").reverse();
-    //         var domainHref = domainhn[1] + "." + domainhn[0];
-
-    //         return !a.href.match(/^mailto\:/) && !a.href.match(/^tel\:/) && linkhnHref != domainHref;
-    //     };
-
-    //     $("a.external").addClass("ext_link");
-
-    //     $(function() {
-    //         $("a.ext_link").click(function() {
-    //             //open a modal
-    //             $("a:external").attr("data-toggle", "modal");
-    //             $("a.external").attr("data-target", "#modalwindow");
-
-    //             //go to link on modal close
-    //             var url = $(this).attr("href");
-    //             $(".btn-modal.btn-continue").click(function() {
-    //                 window.open(url);
-    //                 $(".btn-modal.btn-continue").off();
-    //             });
-
-    //             $(".btn-modal.btn-close").click(function() {
-    //                 $("#modalwindow").modal("hide");
-    //                 $(".btn-modal.btn-close").off();
-    //             });
-    //         });
-    //     });
-    // });
+    $(".menu-icon").on("click", function() {
+        $("nav ul").toggleClass("showing");
+        $("#main-heading").hide();
+    });
+    $(window).on("scroll", function() {
+        if($(window).scrollTop()) {
+            $("nav").addClass('yellow');
+            $('.menu-1').hide();
+            $("#main-heading").hide();
+            $("#links").hide();
+        }
+        else {
+            $('nav').removeClass('yellow');
+            $("#main-heading").show();
+            $('.menu-1').show();
+            $("#links").show();
+        }
+    })
 })
