@@ -81,6 +81,30 @@ $(document).ready(function() {
       $("#burger1-pop").hide();
     }
   );
+  $("#clicky1").hover(
+    function() {
+      $("#clicky1-pop").show();
+    },
+    function() {
+      $("#clicky1-pop").hide();
+    }
+  );
+  $("#nyt1").hover(
+    function() {
+      $("#nyt1-pop").show();
+    },
+    function() {
+      $("#nyt1-pop").hide();
+    }
+  );
+  $("#virtual1").hover(
+    function() {
+      $("#virtual1-pop").show();
+    },
+    function() {
+      $("#virtual1-pop").hide();
+    }
+  );
 
   $("#fun-pop").on("click", function() {
     $("#fun-finder").show();
@@ -93,6 +117,7 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").hide();
     $("#burger").hide();
+    $("#clicky").hide();
   });
   $("#gif-pop").on("click", function() {
     $("#fun-finder").hide();
@@ -105,6 +130,7 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").hide();
     $("#burger").hide();
+    $("#clicky").hide();
   });
   $("#psychic-pop").on("click", function() {
     $("#fun-finder").hide();
@@ -117,6 +143,7 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").hide();
     $("#burger").hide();
+    $("#clicky").hide();
   });
   $("#bamazon1-pop").on("click", function() {
     $("#fun-finder").hide();
@@ -129,6 +156,7 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").hide();
     $("#burger").hide();
+    $("#clicky").hide();
   });
   $("#friend-pop").on("click", function() {
     $("#fun-finder").hide();
@@ -141,6 +169,7 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").hide();
     $("#burger").hide();
+    $("#clicky").hide();
   });
   $("#train-pop").on("click", function() {
     $("#fun-finder").hide();
@@ -153,6 +182,7 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").hide();
     $("#burger").hide();
+    $("#clicky").hide();
   });
   $("#crystal-pop").on("click", function() {
     $("#fun-finder").hide();
@@ -165,6 +195,7 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").hide();
     $("#burger").hide();
+    $("#clicky").hide();
   });
   $("#liri1-pop").on("click", function() {
     $("#fun-finder").hide();
@@ -177,6 +208,7 @@ $(document).ready(function() {
     $("#liri").show();
     $("#catering").hide();
     $("#burger").hide();
+    $("#clicky").hide();
   });
   $("#cat-pop").on("click", function() {
     $("#fun-finder").hide();
@@ -189,6 +221,7 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").show();
     $("#burger").hide();
+    $("#clicky").hide();
   });
   $("#burger1-pop").on("click", function() {
     $("#fun-finder").hide();
@@ -201,6 +234,50 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").hide();
     $("#burger").show();
+    $("#clicky").hide();
+  });
+  $("#clicky1-pop").on("click", function() {
+    $("#fun-finder").hide();
+    $("#gif-tastic").hide();
+    $("#psychic-game").hide();
+    $("#bamazon").hide();
+    $("#friend-finder").hide();
+    $("#train-sch").hide();
+    $("#unit4-game").hide();
+    $("#liri").hide();
+    $("#catering").hide();
+    $("#burger").hide();
+    $("#clicky").show();
+  });
+  $("#nyt1-pop").on("click", function() {
+    $("#fun-finder").hide();
+    $("#gif-tastic").hide();
+    $("#psychic-game").hide();
+    $("#bamazon").hide();
+    $("#friend-finder").hide();
+    $("#train-sch").hide();
+    $("#unit4-game").hide();
+    $("#liri").hide();
+    $("#catering").hide();
+    $("#burger").hide();
+    $("#clicky").hide();
+    $("#nyt").show();
+    $("#virtual").hide();
+  });
+  $("#virtual1-pop").on("click", function() {
+    $("#fun-finder").hide();
+    $("#gif-tastic").hide();
+    $("#psychic-game").hide();
+    $("#bamazon").hide();
+    $("#friend-finder").hide();
+    $("#train-sch").hide();
+    $("#unit4-game").hide();
+    $("#liri").hide();
+    $("#catering").hide();
+    $("#burger").hide();
+    $("#clicky").hide();
+    $("#nyt").hide();
+    $("#virtual").show();
   });
   $(".js-gotop").on("click", function() {
     $("#fun-finder").hide();
@@ -213,6 +290,9 @@ $(document).ready(function() {
     $("#liri").hide();
     $("#catering").hide();
     $("#burger").hide();
+    $("#clicky").hide();
+    $("#nyt").hide();
+    $("#virtual").hide();
   });
 
   $(".menu-icon").on("click", function() {

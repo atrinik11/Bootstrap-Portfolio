@@ -248,7 +248,10 @@ nav ul li.active > a {
 #unit4-game,
 #liri,
 #catering,
-#burger {
+#burger,
+#clicky,
+#nyt,
+#virtual {
   display: none;
 }
 #started,
@@ -653,6 +656,12 @@ nav ul li.active > a {
     display: block;
     font-size: 60px;
   }
+  #project h3,
+  #project h5 {
+    display: block;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.3);
+  }
   #homeImg {
     height: 600px;
     background-size: cover;
@@ -672,7 +681,7 @@ nav ul li.active > a {
     font-size: 25px;
   }
   #project {
-    margin-top: 25px;
+    margin-top: 45px;
   }
   .project-grid {
     /* margin: 0 60px; */
