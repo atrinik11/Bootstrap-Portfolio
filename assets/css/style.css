@@ -712,7 +712,7 @@ nav ul li.active > a {
   }
   #main-heading h1 {
     display: block;
-    font-size: 60px;
+    font-size: 50px;
   }
   #project h3,
   #project h5 {
@@ -808,9 +808,6 @@ nav ul li.active > a {
     margin-left: 0px;
     height: 330px;
   }
-  /* .push {
-    margin-left: 130px;
-  } */
   .contactInfo ul li {
     margin: 5px 10px;
     padding: 5px 10px;
