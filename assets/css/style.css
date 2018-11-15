@@ -8,7 +8,6 @@
 col- {
   width: 100%;
 }
-
 html,
 body {
   width: 100%;
@@ -29,7 +28,6 @@ body {
   top: 0;
   background-color: rgb(212, 211, 204);
 }
-
 header {
   position: relative;
   top: 0;
@@ -51,7 +49,7 @@ nav {
   line-height: 30px;
   position: fixed;
   align-self: center;
-  color: #fff;
+  color: rgba(169, 169, 169, 1);
   text-transform: uppercase;
   font-weight: bold;
   font-size: 20px;
@@ -75,7 +73,8 @@ nav ul {
 .menu-icon {
   display: block;
   float: right;
-  margin-right: 20px;
+  margin-top: 10px;
+  margin-right: 35px;
   color: #fff;
 }
 .showing {
@@ -98,7 +97,7 @@ nav ul {
   background-color: rgba(254, 232, 86, 1);
 }
 a {
-  color: #fff;
+  color: rgb(125, 125, 107);
 }
 a:hover,
 a:active,
@@ -125,10 +124,17 @@ nav ul li.active > a {
 #main-heading h3 {
   display: none;
 }
+#homeImg h1 {
+  display: block;
+  margin-top: 52%;
+  font-size: 25px;
+  font-weight: 810;
+  color: rgba(254, 232, 86, 0.9);
+}
 .home-scroll,
 .main-scroll,
 .main2-scroll,
-#feature,
+.feature,
 #intro {
   position: relative;
   width: 100%;
@@ -255,7 +261,7 @@ nav ul li.active > a {
   display: none;
 }
 #started,
-.features {
+.feature {
   margin: auto;
   color: rgb(116, 116, 107);
   background-color: rgb(212, 211, 204);
@@ -333,11 +339,11 @@ nav ul li.active > a {
 .skill-grid i {
   text-align: center;
 }
-#feature {
-  height: 810px;
+.feature {
+  height: 860px;
   position: relative;
 }
-.features {
+.feature {
   display: flex;
   display: -webkit-box;
   display: -moz-box;
@@ -350,10 +356,10 @@ nav ul li.active > a {
   width: 100%;
   position: relative;
 }
-.features h3 {
+.feature h3 {
   font-size: 20px;
 }
-.features p {
+.feature p {
   font-size: 16px;
   line-height: 25px;
   color: rgb(125, 125, 107);
@@ -381,38 +387,27 @@ nav ul li.active > a {
   left: 0;
 }
 #contactInfo ul li {
-  margin: 5px;
+  margin: 10px;
   padding: 5px;
 }
 #contactInfo ul li i {
-  margin: 3px;
+  margin: 10px;
   font-size: 15px;
 }
 #contactInfo ul li a {
-  color: #828282;
+  color: rgb(116, 116, 107);
 }
 #footer {
   width: 100%;
   height: 129px;
 }
-#footer ul {
-  list-style: none;
-  display: inline;
+#footer li {
   align-self: center;
+  margin: 0 2px;
+  padding: 0 2px 10px;
 }
-#footer ul li {
-  float: left;
-  margin: 0 7px;
-  padding: 0 7px 10px;
-}
-#footer ul .center {
-  position: absolute;
-  top: 90%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-#footer ul li i {
+#footer li i {
+  font-size: 15px;
   bottom: 10px;
 }
 
@@ -468,27 +463,27 @@ nav ul li.active > a {
   nav ul li a:hover {
     font-size: 23px;
   }
-  a {
-    color: #fff;
-  }
   .menu-icon {
     display: block;
+    margin-top: -10px;
+    margin-right: 35px;
+    padding: 5px;
   }
   nav.yellow {
     height: 140px;
   }
-  #main-heading {
-    margin-bottom: -50px;
-  }
   #main-heading h1 {
-    display: block;
-  }
-  #main-heading h1 {
-    font-size: 28px;
-    color: white;
+    display: none;
   }
   #homeImg {
     height: 400px;
+  }
+  #homeImg h1 {
+    display: block;
+    margin-top: 38%;
+    font-size: 35px;
+    font-weight: 810;
+    color: rgba(254, 232, 86, 0.9);
   }
   .btn-lg:hover {
     font-size: 23px;
@@ -523,41 +518,71 @@ nav ul li.active > a {
   .skill-grid p {
     text-align: left;
   }
-  #feature {
-    height: 780px;
+  .feature {
+    height: 750px;
+    margin-top: 20px;
   }
-  .features h3 {
+  .feature h3 {
     font-size: 25px;
   }
-  .features p {
+  .feature p {
     font-size: 20px;
     line-height: 25px;
   }
   .image-holder {
     height: 230px;
   }
-  #contactInfo {
+  .contactInfo {
+    margin-top: 33%;
+    margin-left: -90px;
     height: 180px;
   }
-  #contactInfo ul li {
+  .contactInfo ul {
+    margin-left: -20px;
+    width: 100%;
+  }
+  .contactInfo ul li {
     margin: 5px 10px;
     padding: 5px 10px;
   }
-  #contactInfo ul li i {
-    margin: 5px;
-    font-size: 20px;
+  .contactInfo ul li i {
+    display: none;
   }
-  #contactInfo ul li i:hover {
-    color: #ffff;
-  }
-  #contactInfo ul li a:hover {
+  .contactInfo ul li a:hover {
     color: #ffff;
   }
   #footer {
-    height: 130px;
+    width: 100%;
+    height: 129px;
+  }
+  #footer p .block {
+    margin: 10px 5px;
+    padding: 10px 2px 10px;
+    font-size: 18px;
+  }
+  #footer li {
+    align-self: center;
+  }
+  #footer li i {
+    font-size: 10px;
+    bottom: 10px;
+  }
+  #footer .icons {
+    margin-top: -20px;
+    margin-left: 15px;
+    text-align: center;
+  }
+  #footer .icons li a {
+    margin: 5px 10px;
+    padding: 7px 5px 7px;
+  }
+  #footer .icons li i {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 15px;
   }
 }
-@media (min-width: 850px) {
+@media (min-width: 950px) {
   .col-1 {
     width: 8.33%;
   }
@@ -605,6 +630,7 @@ nav ul li.active > a {
     line-height: 30px;
     font-size: 34px;
     letter-spacing: 2px;
+    font-weight: 900;
   }
   .menu-1 {
     display: block;
@@ -632,9 +658,6 @@ nav ul li.active > a {
     margin: 0;
     list-style: none;
     display: inline;
-  }
-  a {
-    color: #fff;
   }
   nav ul li a {
     font-size: 24px;
@@ -667,6 +690,9 @@ nav ul li.active > a {
     background-size: cover;
     background-position-y: 0;
   }
+  #homeImg h1 {
+    display: none;
+  }
   #linksTo {
     height: 600px;
   }
@@ -684,7 +710,6 @@ nav ul li.active > a {
     margin-top: 45px;
   }
   .project-grid {
-    /* margin: 0 60px; */
     margin-bottom: 40px;
     padding: 20px;
     height: 300px;
@@ -720,39 +745,54 @@ nav ul li.active > a {
   .skill-grid p {
     text-align: left;
   }
-  #feature {
-    height: 445px;
-    padding: 20px 100px;
+  .feature {
+    margin-right: -10px;
+    width: 100%;
+    height: 600px;
+    padding: 40px 55px;
   }
-  .features p {
-    font-size: 18px;
-    line-height: 25px;
+  .bio {
+    height: 400px;
   }
-  .features h3 {
+  .feature .bio h3 {
     font-size: 25px;
   }
-  .features p {
+  .feature .bio p {
     font-size: 20px;
     line-height: 25px;
   }
   .image-holder {
-    height: 230px;
+    height: 330px;
   }
-  #contactInfo {
-    height: 180px;
+  .photo-grid {
+    margin-left: -78px;
+    height: 250px;
   }
-  #contactInfo ul li {
+  .contactInfo {
+    margin-top: -5px;
+    /* margin-left: 5px; */
+    height: 330px;
+  }
+  .push {
+    margin-left: 130px;
+  }
+  .contactInfo ul li {
     margin: 5px 10px;
     padding: 5px 10px;
   }
-  #contactInfo ul li i {
+  .contactInfo ul li i {
     margin: 5px;
     font-size: 20px;
   }
-  #contactInfo ul li i:hover {
+  .contactInfo ul li i a {
+    margin: 5px;
+    font-size: 30px;
+    color: rgb(80, 74, 74);
+  }
+  .contactInfo ul li i:hover {
     color: #ffff;
   }
-  #contactInfo ul li a:hover {
+  .contactInfo ul li a:hover {
     color: #ffff;
   }
   .footer {
@@ -765,29 +805,30 @@ nav ul li.active > a {
     padding: 7em 0;
     clear: both;
   }
-  #footer p {
-    margin: 10px 7px;
-    padding: 10px 7px 10px;
+  #footer {
+    height: 150px;
+  }
+  #footer .copyright {
+    margin-top: 10px;
+  }
+  #footer p .block {
+    margin: 10px 5px;
+    padding: 10px 2px 10px;
     font-size: 23px;
   }
-  #footer ul li {
-    margin: 10px 7px;
-    padding: 10px 7px 10px;
-  }
-  #footer ul li i {
-    bottom: 10px;
-  }
-  #footer {
-    height: 130px;
-  }
-  ul .icons li {
+  #footer .icons {
+    margin-top: -20px;
+    margin-left: -5px;
     text-align: center;
   }
-  .icons li a i {
-    display: inline-block;
-    font-size: 18px;
+  #footer .icons li a {
+    margin: 5px 10px;
+    padding: 7px 5px 7px;
+    /* font-size: 25px; */
   }
-  .icons li a i:hover {
-    font-size: 20px;
+  #footer .icons li i {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 18px;
   }
 }
