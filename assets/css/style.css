@@ -534,6 +534,9 @@ nav ul li.active > a {
   .project-grid .desc span {
     font-size: 15px;
   }
+  .project-grid .desc small {
+    font-size: 10px;
+  }
   #started p,
   #started ul li {
     font-size: 25px;
