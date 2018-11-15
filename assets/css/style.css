@@ -613,7 +613,7 @@ nav ul li.active > a {
   #footer .icons li i {
     margin-bottom: 20px;
     text-align: center;
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 @media (min-width: 950px) {
