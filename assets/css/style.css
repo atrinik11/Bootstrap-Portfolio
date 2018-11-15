@@ -84,13 +84,14 @@ nav ul {
   box-sizing: border-box;
   text-align: center;
   outline: none;
-  list-style-type: none;
+  list-style: none;
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
   *display: inline;
   width: 100%;
   font: bold 14px/0.4 Helvetica;
+  letter-spacing: 0.3em;
   line-height: 70px;
   /* text-indent: -55px; */
   transition: all 0.2s ease-out;
