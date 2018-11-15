@@ -476,14 +476,45 @@ nav ul li.active > a {
     display: none;
   }
   #homeImg {
+    margin-top: -40px;
     height: 400px;
   }
   #homeImg h1 {
     display: block;
     margin-top: 38%;
-    font-size: 35px;
+    font-size: 45px;
     font-weight: 810;
     color: rgba(254, 232, 86, 0.9);
+  }
+  #linksTo {
+    height: 250px;
+    vertical-align: middle;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #linkBtn1 {
+    margin-top: -10px;
+  }
+  #linkBtn2 {
+    margin-top: -15px;
+  }
+  #linkBtn3 {
+    margin-top: -15px;
+  }
+  .btn-lg {
+    margin: 35px;
+    padding: 15px;
+    display: inline-block;
+    height: 45px;
+    width: 250px;
+    color: rgba(169, 169, 169, 1);
+    background-color: rgba(254, 232, 86, 1);
+    border: solid;
+    border-width: 5px;
+    border-radius: 5%;
+    border-color: rgba(254, 232, 86, 0.9);
+    box-shadow: 2px 2px 5px darkgray;
+    transition: box-shadow ease-in-out cubic-bezier(0.165, 0.84, 0.44, 1);
   }
   .btn-lg:hover {
     font-size: 23px;
