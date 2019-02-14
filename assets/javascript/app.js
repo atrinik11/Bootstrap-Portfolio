@@ -17,6 +17,14 @@ $(document).ready(function() {
       $("#gif-pop").hide();
     }
   );
+  $("#hangman").hover(
+    function() {
+      $("#hangman-pop").show();
+    },
+    function() {
+      $("#hangman-pop").hide();
+    }
+  );
   $("#psychic").hover(
     function() {
       $("#psychic-pop").show();
@@ -109,6 +117,7 @@ $(document).ready(function() {
   $("#fun-pop").on("click", function() {
     $("#fun-finder").show();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -122,6 +131,21 @@ $(document).ready(function() {
   $("#gif-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").show();
+    $("#hangman-game").hide();
+    $("#psychic-game").hide();
+    $("#bamazon").hide();
+    $("#friend-finder").hide();
+    $("#train-sch").hide();
+    $("#unit4-game").hide();
+    $("#liri").hide();
+    $("#catering").hide();
+    $("#burger").hide();
+    $("#clicky").hide();
+  });
+  $("#hangman-pop").on("click", function() {
+    $("#fun-finder").hide();
+    $("#gif-tastic").hide();
+    $("#hangman-game").show();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -135,6 +159,7 @@ $(document).ready(function() {
   $("#psychic-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").show();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -148,6 +173,7 @@ $(document).ready(function() {
   $("#bamazon1-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").show();
     $("#friend-finder").hide();
@@ -161,6 +187,7 @@ $(document).ready(function() {
   $("#friend-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").show();
@@ -174,6 +201,7 @@ $(document).ready(function() {
   $("#train-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -187,6 +215,7 @@ $(document).ready(function() {
   $("#crystal-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -200,6 +229,7 @@ $(document).ready(function() {
   $("#liri1-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -213,6 +243,7 @@ $(document).ready(function() {
   $("#cat-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -226,6 +257,7 @@ $(document).ready(function() {
   $("#burger1-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -239,6 +271,7 @@ $(document).ready(function() {
   $("#clicky1-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -252,6 +285,7 @@ $(document).ready(function() {
   $("#nyt1-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -267,6 +301,7 @@ $(document).ready(function() {
   $("#virtual1-pop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
@@ -282,6 +317,7 @@ $(document).ready(function() {
   $(".js-gotop").on("click", function() {
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
+    $("#hangman-game").hide();
     $("#psychic-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
