@@ -33,6 +33,14 @@ $(document).ready(function() {
       $("#psychic-pop").hide();
     }
   );
+  $("#starwar").hover(
+    function() {
+      $("#starwar-pop").show();
+    },
+    function() {
+      $("#starwar-pop").hide();
+    }
+  );
   $("#bamazon1").hover(
     function() {
       $("#bamazon1-pop").show();
@@ -115,10 +123,12 @@ $(document).ready(function() {
   );
 
   $("#fun-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").show();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -129,10 +139,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#gif-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").show();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -143,10 +155,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#hangman-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").show();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -157,10 +171,28 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#psychic-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").show();
+    $("#starwar-game").hide();
+    $("#bamazon").hide();
+    $("#friend-finder").hide();
+    $("#train-sch").hide();
+    $("#unit4-game").hide();
+    $("#liri").hide();
+    $("#catering").hide();
+    $("#burger").hide();
+    $("#clicky").hide();
+  });
+  $("#starwar-pop").on("click", function() {
+    $("#project").hide();
+    $("#fun-finder").hide();
+    $("#gif-tastic").hide();
+    $("#hangman-game").hide();
+    $("#psychic-game").hide();
+    $("#starwar-game").show();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -171,10 +203,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#bamazon1-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").show();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -185,10 +219,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#friend-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").show();
     $("#train-sch").hide();
@@ -199,10 +235,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#train-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").show();
@@ -213,10 +251,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#crystal-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -227,10 +267,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#liri1-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -241,10 +283,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#cat-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -255,10 +299,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#burger1-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -269,10 +315,12 @@ $(document).ready(function() {
     $("#clicky").hide();
   });
   $("#clicky1-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -283,10 +331,12 @@ $(document).ready(function() {
     $("#clicky").show();
   });
   $("#nyt1-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -299,10 +349,12 @@ $(document).ready(function() {
     $("#virtual").hide();
   });
   $("#virtual1-pop").on("click", function() {
+    $("#project").hide();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();
@@ -315,10 +367,12 @@ $(document).ready(function() {
     $("#virtual").show();
   });
   $(".js-gotop").on("click", function() {
+    $("#project").show();
     $("#fun-finder").hide();
     $("#gif-tastic").hide();
     $("#hangman-game").hide();
     $("#psychic-game").hide();
+    $("#starwar-game").hide();
     $("#bamazon").hide();
     $("#friend-finder").hide();
     $("#train-sch").hide();

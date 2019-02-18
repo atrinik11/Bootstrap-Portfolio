@@ -260,6 +260,7 @@ nav ul li.active > a {
 #friend-finder,
 #train-sch,
 #unit4-game,
+#starwar-game,
 #liri,
 #catering,
 #burger,
@@ -289,8 +290,13 @@ nav ul li.active > a {
   font-size: 18px;
   color: rgb(237, 243, 242);
 }
-.gototop .js-gotop i {
+.gototop .js-gotop i,
+.top {
   float: right;
+}
+.top {
+  margin-top: 50px;
+  margin-right: -85px;
 }
 .icons {
   margin: 0;
