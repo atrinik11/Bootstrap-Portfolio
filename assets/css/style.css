@@ -202,6 +202,22 @@ nav ul li.active > a {
 .center3 {
   top: 80%;
 }
+.pageProgressBar {
+  height: 15px;
+  border: solid;
+  border-width: 5px;
+  background-color: rgb(245, 221, 67);
+  color: rgb(245, 221, 67);
+}
+.bar1 {
+  width: 33%;
+}
+.bar2 {
+  width: 66%;
+}
+.bar3 {
+  width: 100%;
+}
 .project-grid {
   margin-bottom: 25px;
   padding: 10px;
@@ -384,6 +400,8 @@ nav ul li.active > a {
   width: 100%;
 }
 .photo-grid {
+  margin: auto;
+  margin-left: 40px;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -391,25 +409,42 @@ nav ul li.active > a {
   overflow: hidden;
   height: 100%;
   padding: 10px 20px;
-  left: 95px;
 }
-#contactInfo {
+.resumeLink {
+  margin-top: 175px;
+  margin-left: 90px;
+}
+.contactInfo {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
   height: 150px;
 }
-#contactInfo ul {
-  margin-top: 20px;
+.contactInfo ul {
+  margin-top: 5px;
   left: 0;
 }
-#contactInfo ul li {
+.contactInfo ul li {
   margin: 10px;
   padding: 5px;
 }
-#contactInfo ul li i {
-  margin: 10px;
+.fas,
+.fab {
+  display: block;
+  margin-left: -5px;
   font-size: 15px;
 }
-#contactInfo ul li a {
+.fas:hover,
+.fab:hover {
+  font-size: 18px;
+}
+.contactInfo .push ul a {
+  margin-left: 10px;
   color: rgb(116, 116, 107);
+}
+.contactInfo .push ul a:hover {
+  cursor: pointer;
+  color: white;
 }
 #footer {
   width: 100%;
@@ -528,8 +563,6 @@ nav ul li.active > a {
     display: inline-block;
     height: 45px;
     width: 250px;
-    color: rgba(169, 169, 169, 1);
-    background-color: rgba(254, 232, 86, 1);
     border: solid;
     border-width: 5px;
     border-radius: 5%;
@@ -594,11 +627,16 @@ nav ul li.active > a {
     line-height: 25px;
   }
   .image-holder {
+    margin-left: 75px;
     height: 230px;
+  }
+  .resumeLink {
+    margin-left: 120px;
+    margin-top: 210px;
   }
   .contactInfo {
     margin-top: 33%;
-    margin-left: -90px;
+    margin-left: -225px;
     height: 180px;
   }
   .contactInfo ul {
@@ -608,9 +646,6 @@ nav ul li.active > a {
   .contactInfo ul li {
     margin: 5px 10px;
     padding: 5px 10px;
-  }
-  .contactInfo ul li i {
-    display: none;
   }
   .contactInfo ul li a:hover {
     color: #ffff;
@@ -834,12 +869,21 @@ nav ul li.active > a {
     height: 330px;
   }
   .photo-grid {
-    margin-left: 10px;
+    margin-left: 130px;
     height: 250px;
+  }
+  .resumeLink {
+    margin-top: 230px;
+    margin-left: 220px;
+  }
+  .fas,
+  .fab {
+    display: block;
+    font-size: 18px;
   }
   .contactInfo {
     margin-top: -5px;
-    margin-left: 0px;
+    margin-left: -100px;
     height: 330px;
   }
   .contactInfo ul li {
@@ -852,6 +896,7 @@ nav ul li.active > a {
   }
   .contactInfo ul li i a {
     margin: 5px;
+    margin-left: -220px;
     font-size: 30px;
     color: rgb(80, 74, 74);
   }
