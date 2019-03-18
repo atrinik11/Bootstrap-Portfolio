@@ -125,6 +125,16 @@ nav ul li.active > a {
 #main-heading h3 {
   display: none;
 }
+#homeImg {
+  border: solid;
+  border-width: 5px;
+  border-color: rgba(169, 169, 169, 1);
+  /* box-shadow:  */
+}
+.mySlides {
+  display: none;
+  /* margin-top: -20px; */
+}
 #homeImg h1 {
   display: block;
   margin-top: 52%;

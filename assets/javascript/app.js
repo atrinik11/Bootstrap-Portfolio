@@ -121,274 +121,32 @@ $(document).ready(function() {
       $("#virtual1-pop").hide();
     }
   );
-
-  $("#fun-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").show();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#gif-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").show();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#hangman-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").show();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#psychic-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").show();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#starwar-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").show();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#bamazon1-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").show();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#friend-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").show();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#train-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").show();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#crystal-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").show();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#liri1-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").show();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#cat-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").show();
-    $("#burger").hide();
-    $("#clicky").hide();
-  });
-  $("#burger1-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").show();
-    $("#clicky").hide();
-  });
-  $("#clicky1-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").show();
-  });
-  $("#nyt1-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-    $("#nyt").show();
-    $("#virtual").hide();
-  });
-  $("#virtual1-pop").on("click", function() {
-    $("#project").hide();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-    $("#nyt").hide();
-    $("#virtual").show();
-  });
   $(".js-gotop").on("click", function() {
     $("#project").show();
-    $("#fun-finder").hide();
-    $("#gif-tastic").hide();
-    $("#hangman-game").hide();
-    $("#psychic-game").hide();
-    $("#starwar-game").hide();
-    $("#bamazon").hide();
-    $("#friend-finder").hide();
-    $("#train-sch").hide();
-    $("#unit4-game").hide();
-    $("#liri").hide();
-    $("#catering").hide();
-    $("#burger").hide();
-    $("#clicky").hide();
-    $("#nyt").hide();
-    $("#virtual").hide();
   });
 
   $(".menu-icon").on("click", function() {
     $("nav ul").toggleClass("showing");
     $("#main-heading").hide();
   });
+
+  //For automatic slideshow
+  var myIndex = 0;
+  carousel();
+
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {
+      myIndex = 1;
+    }
+    x[myIndex - 1].style.display = "block";
+    setTimeout(carousel, 5000);
+  }
   $(window).on("scroll", function() {
     if ($(window).scrollTop()) {
       $("nav").addClass("yellow");
