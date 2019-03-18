@@ -462,7 +462,7 @@ nav ul li.active > a {
 }
 #footer li {
   align-self: center;
-  margin: 0 2px;
+  margin-left: 18px;
   padding: 0 2px 10px;
 }
 #footer li i {
