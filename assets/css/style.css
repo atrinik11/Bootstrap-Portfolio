@@ -888,6 +888,9 @@ nav ul li.active > a {
   .gototop .js-gotopGif i {
     margin-top: 400px;
   }
+  .gototop .js-gotopClick i {
+    margin-top: 300px;
+  }
   .gototop .js-gotopCat i {
     margin-top: 700px;
   }
