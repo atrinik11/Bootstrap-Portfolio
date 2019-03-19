@@ -486,6 +486,8 @@ nav ul li.active > a {
   height: 129px;
 }
 #footer li {
+  /* align-self: center;
+  margin-left: 18px; */
   padding: 0 2px 10px;
 }
 #footer li i {
@@ -694,12 +696,7 @@ nav ul li.active > a {
   }
   #footer .icons {
     margin-top: -20px;
-    margin-left: 15px;
     margin-bottom: 10px;
-    text-align: center;
-  }
-  #footer li {
-    align-self: center;
   }
   #footer li i {
     font-size: 10px;
@@ -711,7 +708,6 @@ nav ul li.active > a {
   }
   #footer .icons li i {
     margin-bottom: 20px;
-    text-align: center;
     font-size: 20px;
   }
 }
@@ -953,7 +949,7 @@ nav ul li.active > a {
   #footer {
     height: 150px;
   }
-  #footer .copyright {
+  #footer {
     margin-top: 10px;
   }
   #footer p .block {
@@ -963,8 +959,8 @@ nav ul li.active > a {
   }
   #footer .icons {
     margin-top: -20px;
-    margin-left: -5px;
-    text-align: center;
+    /* margin-left: -5px;
+    text-align: center; */
   }
   #footer .icons li a {
     margin: 5px 10px;
@@ -973,7 +969,7 @@ nav ul li.active > a {
   }
   #footer .icons li i {
     margin-bottom: 20px;
-    text-align: center;
+    /* text-align: center; */
     font-size: 18px;
     -webkit-transition: all 0.2s linear;
     -o-transition: all 0.2s linear;
