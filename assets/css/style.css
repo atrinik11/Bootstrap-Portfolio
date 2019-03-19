@@ -636,6 +636,28 @@ nav ul li.active > a {
   #started ul li {
     font-size: 25px;
   }
+  .gototop .js-gotopClick i {
+    margin-top: 300px;
+    font-size: 45px;
+  }
+  .gototop .js-gotop i {
+    margin-top: 400px;
+  }
+  .gototop .js-gotopCat i {
+    margin-top: 850px;
+  }
+  .gototop .js-gotopUnit i,
+  .gototop .js-gotopHang i {
+    margin-top: 500px;
+    font-size: 45px;
+  }
+  .gototop .js-gotopFri i {
+    margin-top: 600px;
+  }
+  .gototop .js-gotopStar i {
+    margin-top: 450px;
+    font-size: 45px;
+  }
   .skill-grid {
     margin: 5px 5px;
     height: 180px;
@@ -857,6 +879,24 @@ nav ul li.active > a {
   #started ul li a:hover {
     font-size: 20px;
     color: rgb(237, 243, 242);
+  }
+  .gototop .js-gotop i,
+  .gototop .js-gotopLiri i,
+  .gototop .js-gotopUnit i,
+  .gototop .js.gotopHang i,
+  .gototop .js-gotopStar i,
+  .gototop .js-gotopGif i {
+    margin-top: 400px;
+  }
+  .gototop .js-gotopCat i {
+    margin-top: 700px;
+  }
+  .gototop .js-gotopFri i {
+    margin-top: 500px;
+  }
+  .gototop .js-gotopBam i {
+    margin-top: 300px;
+    font-size: 45px;
   }
   .main2-scroll .col-md-4 {
     margin-top: 5px;
