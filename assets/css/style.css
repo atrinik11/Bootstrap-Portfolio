@@ -108,9 +108,16 @@ a:focus {
 }
 nav ul li a {
   font-size: 18px;
-  padding: 30px 10px;
+  padding: 5px 10px;
   color: rgba(169, 169, 169, 1);
   transition: 0.5s;
+}
+#navAbout {
+  font-size: 18px;
+  padding: 2px 10px;
+  transition: 0.5s;
+  color: rgba(169, 169, 169, 1);
+  cursor: pointer;
 }
 nav ul li a:hover,
 nav ul li a:focus,
@@ -283,9 +290,9 @@ nav ul li.active > a {
 }
 .modal-body img {
   margin: auto;
-  margin-left: 90px;
-  height: 250px;
-  width: 300px;
+  margin-left: 45px;
+  height: 220px;
+  width: 250px;
 }
 .modal-header,
 .modal-body {
@@ -577,6 +584,11 @@ nav ul li.active > a {
   nav.yellow {
     height: 140px;
   }
+  .modal-body img {
+    margin-left: 65px;
+    height: 250px;
+    width: 300px;
+  }
   #main-heading h1 {
     display: none;
   }
@@ -827,10 +839,6 @@ nav ul li.active > a {
   }
   #navAbout {
     font-size: 24px;
-    padding: 30px 10px;
-    transition: 0.5s;
-    color: rgba(169, 169, 169, 1);
-    cursor: pointer;
   }
   nav ul li a:hover,
   nav ul li a:focus,
@@ -846,6 +854,11 @@ nav ul li.active > a {
   #main-heading h1 {
     display: block;
     font-size: 50px;
+  }
+  .modal-body img {
+    margin-left: 90px;
+    height: 250px;
+    width: 300px;
   }
   #project h3,
   #project h5 {
