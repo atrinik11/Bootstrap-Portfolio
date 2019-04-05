@@ -52,7 +52,9 @@
               <li class="active"><a href="index.html">Home</a></li>
               <li><a href="work.html">Work</a></li>
               <li><a href="tools.html">Skills</a></li>
-              <li><a href="about.html">About Me</a></li>
+              <li data-toggle="modal" data-target="#aboutModal" id="navAbout">
+                About Me
+              </li>
             </ul>
           </div>
         </nav>
@@ -183,29 +185,96 @@
               >Resume</button>
             </a>
           </div>
-        </div>
-        <footer id="footer" role="contentinfo" style = "background-color: rgba(254, 232, 86, 1);">
-          <div class="container  text-center">
-            <div class="row">
-              <div class = "col-12">
-                <p>
-                  <small class="block">&copy; Rights Reserved.<br>
-                  <small class="block">Designed by <a href="about.html">Reena Mahapatra</a>
-                </p>
-              </div>
+        </div>        
+      </div>
+      <!-- Modal for about Me -->
+      <div
+        class="modal fade"
+        id="aboutModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="aboutLabel"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title" id="aboutLabel">Reena Mahapatra</h4>
+              <button type="button" class="close" data-dismiss="modal">
+                &times;
+              </button>
             </div>
-            <div class='row icons'>
-              <div class = "col-12">
-                <li><a href="https://github.com/atrinik11" target="_blank"><i class="devicon-github-plain-wordmark colored"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/rmahapatra" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="mailto:reenm2017@gmail.com"><i class="fas fa-at"></i></a></li>
-              </div>
+            <div class="modal-body">
+              <img src="assets/images/self.jpg" />
+              <p>
+                Determined and resourceful Full Stack Developer. Life long
+                learner and curious to learn and excel new things. Outstanding
+                organisational, customer service skills. Self motivated with
+                good and positive intensions with proven ability to excel under
+                pressure. Able to work in team and independently. Natural
+                ability to scan problems and solve. Excellent verbal, written
+                and interpersonal communication skills.
+              </p>
+              <h4 class="resumeLink">
+                <a
+                  href="https://docs.google.com/document/d/1R_lqs2Zr7KP2DGsBewy6zUPfKQDHz-0UHACJ7DuMqUc/edit?usp=sharing"
+                  target="_blank">Resume</a
+                >
+              </h4>
+              <h4>Address:</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-map-marked-alt"></i>
+                  <a href="https://goo.gl/maps/P8yTSYxqzhp" target="_blank">
+                    Fishhawk Ranch, Lithia, FL-33547
+                  </a>
+                </li>
+              </ul>
+              <h4>Contact Info:</h4>
+              <ul>
+                <li>
+                  <i class="fas fa-phone-volume"></i>
+                  <a href="tel:14123393229">+1 (412)-339-3229</a>
+                </li>
+                <li>
+                  <i class="fas fa-at"></i>
+                  <a href="mailto:reenam2017@gmail.com">reenam2017@gmail.com</a>
+                </li>
+                <li>
+                  <i class="fab fa-skype"></i>
+                  <a href="skype:reenam2017@gmail.com?call">Reena Mahapatra<small>(Skype)</small>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn" data-dismiss="modal">
+                close
+              </button>
             </div>
           </div>
-        </footer>
+        </div>
       </div>
+      <footer id="footer" role="contentinfo" style = "background-color: rgba(254, 232, 86, 1);">
+        <div class="container  text-center">
+          <div class="row">
+            <div class = "col-12">
+              <p>
+                <small class="block">&copy; Rights Reserved.<br>
+                <small class="block">Designed by <a href="about.html">Reena Mahapatra</a>
+              </p>
+            </div>
+          </div>
+          <div class='row icons'>
+            <div class = "col-12">
+              <li><a href="https://github.com/atrinik11" target="_blank"><i class="devicon-github-plain-wordmark colored"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/rmahapatra" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+              <li><a href="mailto:reenm2017@gmail.com"><i class="fas fa-at"></i></a></li>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
-
+          
     <!-- Optional JavaScript -->
     <!-- JQuery first,  then Popper.js then Bootstrap JS -->
     <script

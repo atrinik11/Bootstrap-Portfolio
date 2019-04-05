@@ -462,10 +462,10 @@ nav ul li.active > a {
   height: 100%;
   padding: 10px 20px;
 }
-.resumeLink {
+/* .resumeLink {
   margin-top: 175px;
   margin-left: 90px;
-}
+} */
 .contactInfo {
   margin-top: 10px;
   margin-bottom: 20px;
@@ -704,10 +704,10 @@ nav ul li.active > a {
     margin-left: 75px;
     height: 230px;
   }
-  .resumeLink {
+  /* .resumeLink {
     margin-left: 120px;
     margin-top: 210px;
-  }
+  } */
   .contactInfo {
     margin-top: 38%;
     margin-left: -225px;
@@ -831,6 +831,13 @@ nav ul li.active > a {
     font-size: 24px;
     padding: 30px 10px;
     transition: 0.5s;
+  }
+  #navAbout {
+    font-size: 24px;
+    padding: 30px 10px;
+    transition: 0.5s;
+    color: rgba(169, 169, 169, 1);
+    cursor: pointer;
   }
   nav ul li a:hover,
   nav ul li a:focus,
@@ -962,10 +969,10 @@ nav ul li.active > a {
     margin-left: 130px;
     height: 250px;
   }
-  .resumeLink {
+  /* .resumeLink {
     margin-top: 230px;
     margin-left: 220px;
-  }
+  } */
   .fas,
   .fab {
     display: block;
