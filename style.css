@@ -280,7 +280,7 @@ nav ul li.active > a {
 .center3 {
   top: 80%;
 }
-/******************** WORK PAGE STYLING ********************/
+/** WORK PAGE STYLING **/
 #project {
   background-color: rgb(108, 54, 104);
 }
@@ -346,7 +346,7 @@ nav ul li.active > a {
   margin-bottom: 10px;
   padding-bottom: 25px;
 }
-/******************** Modal Styling ********************/
+/** Modal Styling **/
 .modal-content {
   background-color: rgb(169, 169, 169);
 }
@@ -363,7 +363,7 @@ nav ul li.active > a {
 .modal-footer .btn {
   background-color: rgb(108, 54, 104);
 }
-/******************** End Of Modal Styling ********************/
+/**End Of Modal Styling **/
 #fun-finder,
 #gif-tastic,
 #hangman-game,
@@ -381,7 +381,7 @@ nav ul li.active > a {
 #virtual {
   display: none;
 }
-/******************** CONTACT PAGE STYLING ********************/
+/** CONTACT PAGE STYLING **/
 #contact {
   height: auto;
   width: 100%;
@@ -487,7 +487,7 @@ nav ul li.active > a {
   .contactInner {
     font-size: 50px;
   }
-  /******************** ABOUT PAGE STYLING ********************/
+  /** ABOUT PAGE STYLING **/
   header {
     height: 125px;
   }
@@ -548,7 +548,7 @@ nav ul li.active > a {
     margin-left: 290px;
   }
 
-  /******************** WORK PAGE STYLING ********************/
+  /** WORK PAGE STYLING **/
   #project {
     margin-top: 20px;
   }
@@ -570,8 +570,8 @@ nav ul li.active > a {
   .project-grid .desc small {
     font-size: 10px;
   }
-  /******************** END OF WORK PAGE STYLING ********************/
-  /******************** CONTACT PAGE STYLING ********************/
+  /** END OF WORK PAGE STYLING **/
+  /** CONTACT PAGE STYLING **/
   .areaMap {
     margin: auto;
     margin-top: 5px;
@@ -608,7 +608,7 @@ nav ul li.active > a {
     background-color: rgb(71, 157, 232);
   }
 
-  /******************** FOOTER PAGE STYLING ********************/
+  /** FOOTER PAGE STYLING **/
   #footer {
     width: 100%;
     height: 100px;
