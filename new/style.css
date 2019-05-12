@@ -1,0 +1,920 @@
+*,
+*::before,
+*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+col- {
+  width: 100%;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-size: contain;
+  font-family: "Dancing Script", cursive;
+  font-weight: lighter;
+  font-size: 16px;
+  line-height: 1.7em;
+  color: #828282;
+  background: #fff;
+}
+html {
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+#page {
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(83, 81, 81);
+}
+#main-page h1,
+#main-page h2 {
+  font-family: "Dancing Script", cursive;
+}
+/* index page animation effect */
+.typing h1,
+.typing {
+  overflow: hidden;
+  border-right: 0.15em solid orange;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(150, end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: transparent;
+  }
+}
+/* end of index page animation effect */
+.heading {
+  height: 100px;
+}
+.heading h1 {
+  margin-top: 10px;
+}
+#aboutPage {
+  background-color: rgb(216, 67, 78);
+}
+#workPage {
+  background-color: rgb(108, 54, 104);
+}
+#contactPage {
+  color: rgb(108, 54, 104);
+  background-color: rgb(168, 219, 214);
+}
+#aboutPage,
+#workPage,
+#contactPage {
+  height: 200px;
+}
+.aboutInner,
+.workInner,
+.contactInner {
+  margin-top: 90px;
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  color: rgb(169, 169, 169);
+}
+/* Main Page Styling  */
+header {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 75px;
+  background-size: cover;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  line-height: 60px;
+  height: 75px;
+  z-index: 100;
+}
+.logo {
+  top: 0;
+  margin: 16px 56px;
+  line-height: 30px;
+  position: fixed;
+  align-self: center;
+  color: rgb(216, 67, 78);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  letter-spacing: 2px;
+  z-index: 100;
+}
+nav.yellow {
+  position: fixed;
+  margin-top: 0;
+  padding: 20px;
+  height: 70px;
+  color: white;
+  background-color: rgb(72, 186, 170);
+  z-index: 100;
+  box-shadow: rgba(3, 0, 0, 0.85);
+}
+nav ul {
+  display: none;
+}
+.menu-icon {
+  display: block;
+  float: right;
+  margin-top: 10px;
+  margin-right: 35px;
+  color: rgb(216, 67, 78);
+}
+.showing {
+  position: relative;
+  margin-top: 0;
+  display: block;
+  box-sizing: border-box;
+  text-align: center;
+  outline-style: auto;
+  list-style: none;
+  display: -moz-inline-stack;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+  width: 100%;
+  font: bold 14px/0.4 Helvetica;
+  letter-spacing: 0.3em;
+  line-height: 70px;
+  transition: all 0.2s ease-out;
+  border-bottom: none !important;
+  background-color: rgb(103, 85, 130);
+}
+a:hover,
+a:active,
+a:focus {
+  color: rgb(48, 81, 189);
+  outline: none;
+  text-decoration: none;
+}
+nav ul li a {
+  font-size: 18px;
+  padding: 5px 10px;
+  color: rgba(168, 219, 214, 1);
+  transition: 0.5s;
+}
+nav ul li a:hover,
+nav ul li a:focus,
+nav ul li a:active {
+  color: rgb(216, 67, 78);
+}
+nav ul li.active > a {
+  color: rgb(216, 67, 78) !important;
+}
+#home-scroll {
+  position: relative;
+  width: 100%;
+  background-color: rgb(83, 81, 81);
+}
+#homeImg,
+#linksTo,
+#project,
+#contact {
+  letter-spacing: 2px;
+  border: solid;
+  border-width: 5px;
+  border-color: rgba(169, 169, 169, 1);
+  font-size: 20px;
+}
+#homeImg {
+  margin: 0 10px;
+  height: auto;
+  font-family: "Dancing Script", cursive;
+  background-color: rgb(216, 67, 78);
+  color: white;
+}
+#homeImg h3,
+#project h3,
+.project-grid h3 {
+  font-family: "Dancing Script", cursive;
+}
+#selfImg1 {
+  display: none;
+}
+#selfImg {
+  display: block;
+  margin: auto;
+  height: 60px;
+}
+.resume1 {
+  display: block;
+  margin: 0 auto;
+  margin-left: 130px;
+  font-size: 25px;
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+}
+#linksTo {
+  display: none;
+  margin: 10px;
+  height: 250px;
+  width: 100%;
+  vertical-align: middle;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: rgb(168, 219, 214);
+}
+.btn-lg {
+  top: 5px;
+  padding: 5px;
+  height: 45px;
+  width: 115px;
+  font-size: 20px;
+  color: rgb(168, 219, 214);
+  font-weight: 600;
+  letter-spacing: 1px;
+  background-color: rgba(169, 169, 169, 1);
+  border: solid;
+  border-width: 5px;
+  border-radius: 5%;
+  border-color: rgba(169, 169, 169, 1);
+  box-shadow: 2px 2px 5px darkgray;
+  transition: box-shadow ease-in-out cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.btn-lg:hover {
+  font-display: bold;
+  font-size: 20px;
+  box-shadow: 0px 0px 0px darkgray;
+  color: rgba(169, 169, 169, 1);
+  background-color: transparent;
+}
+.center1,
+.center2,
+.center3 {
+  margin: 0;
+  line-height: 10px;
+  position: absolute;
+  left: -20%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.center1 {
+  top: 30%;
+}
+.center2 {
+  top: 55%;
+}
+.center3 {
+  top: 80%;
+}
+/******************** WORK PAGE STYLING ********************/
+#project {
+  background-color: rgb(108, 54, 104);
+}
+#project h5 {
+  font-family: "Dancing Script", cursive;
+}
+.table td span {
+  display: none;
+}
+.project-grid {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-bottom: 25px;
+  padding: 10px;
+  position: relative;
+  overflow: hidden;
+  height: 250px;
+  width: 100%;
+  border: none;
+  background-color: rgba(213, 235, 234, 0.9);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.project-grid:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  content: " ";
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: 0.1s;
+}
+.project-grid:hover {
+  opacity: 0.85;
+}
+.project-grid .desc {
+  height: 75px;
+  background: rgb(126, 220, 213);
+  padding: 10px 20px;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  transition: 0.1s;
+  display: none;
+  cursor: pointer;
+}
+.project-grid .desc span {
+  color: rgba(2, 49, 44, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 500px;
+}
+#hangman {
+  background-repeat: no-repeat;
+  object-fit: cover;
+}
+.desc h3 {
+  margin-bottom: 10px;
+  padding-bottom: 25px;
+}
+/******************** Modal Styling ********************/
+.modal-content {
+  background-color: rgb(169, 169, 169);
+}
+.modal-body img {
+  margin: auto;
+  margin-left: 45px;
+  height: 220px;
+  width: 250px;
+}
+.modal-header,
+.modal-body {
+  color: rgba(255, 255, 255, 1);
+}
+.modal-footer .btn {
+  background-color: rgb(108, 54, 104);
+}
+/******************** End Of Modal Styling ********************/
+#fun-finder,
+#gif-tastic,
+#hangman-game,
+#psychic-game,
+#bamazon,
+#friend-finder,
+#train-sch,
+#unit4-game,
+#starwar-game,
+#liri,
+#catering,
+#burger,
+#clicky,
+#nyt,
+#virtual {
+  display: none;
+}
+/******************** CONTACT PAGE STYLING ********************/
+#contact {
+  height: auto;
+  width: 100%;
+  background-color: rgb(205, 164, 80);
+}
+.areaMap {
+  margin: auto;
+}
+#contactDetails {
+  position: relative;
+  clear: both;
+  margin: auto;
+  padding: 10px;
+  height: auto;
+  width: 100%;
+  vertical-align: middle;
+  background-color: rgb(168, 219, 214);
+}
+#contactDetails p {
+  margin: 5px;
+  padding: 5px;
+  font-size: 25px;
+}
+#contactIcon span {
+  display: none;
+}
+#contactIcon {
+  position: absolute;
+  margin-top: 20px;
+  z-index: 100;
+}
+#contactIcon li {
+  margin-bottom: -250px;
+  list-style: none;
+  margin: 0 50px;
+}
+#contactIcon li,
+#contactLinks li {
+  float: left;
+  cursor: pointer;
+}
+#contactIcon li i,
+#contactLinks li i {
+  font-size: 30px;
+  color: rgba(169, 169, 169, 1);
+}
+#contactLinks {
+  margin-top: 90px;
+  margin-left: 3px;
+  list-style: none;
+}
+#contactLinks li {
+  margin: 0 50px;
+}
+.fa-linkedin,
+.fa-github,
+.fa-resume {
+  margin-left: -10px;
+  margin-top: 10px;
+}
+#contactLinks span {
+  display: none;
+}
+#footer {
+  width: 100%;
+  height: 90px;
+  font-size: 30px;
+  background-color: rgb(103, 85, 130);
+}
+.scrollToTop {
+  position: fixed;
+  bottom: 80px;
+  right: 50px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 50%;
+  background: #4717f6;
+  color: white;
+  display: none;
+  font-size: 25px;
+}
+.scrollToTop:hover {
+  cursor: pointer;
+  background: transparent;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+}
+/* MEDIUM REPONSIVNESS DESIGN */
+@media (min-width: 700px) {
+  #main-page h1 {
+    font-size: 60px;
+  }
+  #aboutPage,
+  #workPage,
+  #contactPage {
+    height: 270px;
+  }
+  .aboutInner,
+  .workInner,
+  .contactInner {
+    font-size: 50px;
+  }
+  /******************** ABOUT PAGE STYLING ********************/
+  header {
+    height: 125px;
+  }
+  nav {
+    line-height: 100px;
+    height: 100px;
+  }
+  .logo {
+    margin: 16px 26px;
+    line-height: 30px;
+    font-size: 30px;
+  }
+  nav ul {
+    margin: 24px 0;
+    align-self: center;
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+    float: right;
+    margin-right: 20px;
+    color: #fff;
+  }
+  .showing {
+    height: 250px;
+    outline: none;
+  }
+  nav ul li {
+    text-align: center;
+  }
+  nav ul li a {
+    font-size: 20px;
+    padding: 5px 5px;
+  }
+  nav ul li a:hover {
+    font-size: 23px;
+  }
+  .menu-icon {
+    display: block;
+    margin-top: -10px;
+    margin-right: 35px;
+    padding: 5px;
+  }
+  nav.yellow {
+    height: 100px;
+  }
+  .modal-body img {
+    margin-left: 65px;
+    height: 250px;
+    width: 300px;
+  }
+  #homeImg {
+    margin-top: -40px;
+    margin: auto;
+    height: 350px;
+  }
+  #homeImg .resume1 {
+    margin-left: 290px;
+  }
+
+  /******************** WORK PAGE STYLING ********************/
+  #project {
+    margin-top: 20px;
+  }
+  #project h5 {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .project-grid {
+    margin-bottom: 25px;
+    padding: 10px;
+    height: 350px;
+  }
+  .project-grid .desc {
+    height: 85px;
+  }
+  .project-grid .desc span {
+    font-size: 15px;
+  }
+  .project-grid .desc small {
+    font-size: 10px;
+  }
+  /******************** END OF WORK PAGE STYLING ********************/
+  /******************** CONTACT PAGE STYLING ********************/
+  .areaMap {
+    margin: auto;
+    margin-top: 5px;
+    margin-left: 150px;
+  }
+  #contactIcon {
+    /* margin-top: -10px; */
+    margin-left: 200px;
+  }
+  #contactLinks {
+    margin-left: 200px;
+  }
+  #contactIcon li,
+  #contactLinks li {
+    height: 50px;
+    width: 70px;
+    border-radius: 5%;
+    box-shadow: 1px 3px 5px rgb(82, 82, 82);
+  }
+  #contactIcon li:hover,
+  #contactLinks li:hover {
+    box-shadow: none;
+  }
+  #contactIcon li i,
+  #contactLinks li i {
+    margin-top: 12px;
+    margin-left: 16px;
+    font-size: 30px;
+  }
+  #contactIcon li {
+    background-color: rgb(240, 109, 114);
+  }
+  #contactLinks li {
+    background-color: rgb(71, 157, 232);
+  }
+
+  /******************** FOOTER PAGE STYLING ********************/
+  #footer {
+    width: 100%;
+    height: 100px;
+  }
+  #footer p .block {
+    margin: 10px 5px;
+    padding: 10px 2px 10px;
+    font-size: 20px;
+  }
+}
+/* LARGE RESPONSIVENESS DESIGN */
+@media (min-width: 950px) {
+  .col-1 {
+    width: 8.33%;
+  }
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+  .col-4 {
+    width: 33.33%;
+  }
+  .col-5 {
+    width: 41.66%;
+  }
+  .col-6 {
+    width: 50%;
+  }
+  .col-7 {
+    width: 58.33%;
+  }
+  .col-8 {
+    width: 66.66%;
+  }
+  .col-9 {
+    width: 75%;
+  }
+  .col-10 {
+    width: 83.33%;
+  }
+  .col-11 {
+    width: 91.66%;
+  }
+  .col-12 {
+    width: 100%;
+  }
+  /* MAIN PAGE STYLING */
+  #main-page h1 {
+    margin: 10px;
+    padding: 10px;
+    font-size: 60px;
+    font-weight: bolder;
+  }
+  #aboutPage,
+  #workPage,
+  #contactPage {
+    padding: 10px;
+    height: 400px;
+    border: 2px solid rgb(169, 169, 169);
+  }
+  #aboutPage,
+  #workPage {
+    width: 300px;
+  }
+  #contactPage {
+    margin: auto;
+  }
+  .aboutInner,
+  .workInner,
+  .contactInner {
+    margin-top: 180px;
+    font-size: 50px;
+  }
+  /* NAV BAR STYLING */
+  header {
+    height: 150px;
+  }
+  nav {
+    line-height: 60px;
+  }
+  .logo {
+    margin: 16px 26px;
+    line-height: 30px;
+    font-size: 34px;
+    letter-spacing: 2px;
+    font-weight: 900;
+  }
+  .menu-1 {
+    display: block;
+    float: right;
+  }
+  nav ul {
+    display: block;
+    float: right;
+    line-height: 30px;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    margin: 16px 26px;
+    padding-right: 40px;
+    transition: 1s;
+  }
+  nav.yellow {
+    margin-top: 0;
+    padding: 20px;
+    height: 100px;
+  }
+  nav ul li {
+    clear: both;
+    padding: 30px 10px;
+    margin: 0;
+    list-style: none;
+    display: inline;
+  }
+  nav ul li a {
+    font-size: 24px;
+    padding: 30px 10px;
+    transition: 0.5s;
+  }
+  nav ul li a:hover,
+  nav ul li a:focus,
+  nav ul li a:active {
+    font-size: 27px;
+  }
+  .menu-icon {
+    display: none;
+  }
+  /* HOME PAGE STYLING */
+  #homeImg,
+  #linksTo {
+    margin: auto;
+    padding: 20px;
+    font-size: 30px;
+    letter-spacing: 0.1em;
+    line-height: 1.9em;
+    height: auto;
+  }
+  #linksTo {
+    height: 410px;
+  }
+  #homeImg h3 {
+    font-size: 30px;
+  }
+  .resume1 {
+    display: none;
+  }
+  #linksTo {
+    display: block;
+    background-color: rgb(168, 219, 214);
+    height: 350px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+  #linkBtn1 {
+    margin-top: 15px;
+  }
+  #linkBtn2 {
+    margin-top: 20px;
+  }
+  #linkBtn3 {
+    margin-top: 30px;
+  }
+  .btn-lg {
+    margin: 35px;
+    padding: 15px;
+    display: inline-block;
+    height: 45px;
+    width: 250px;
+    border: solid;
+    border-width: 5px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 5px darkgray;
+    transition: box-shadow ease-in-out cubic-bezier(0.165, 0.84, 0.44, 1);
+  }
+  .center1,
+  .center2,
+  .center3 {
+    left: 30%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  .btn-lg:hover {
+    font-size: 23px;
+  }
+  #selfImg {
+    display: block;
+    height: 200px;
+  }
+  .smallIcon {
+    display: none;
+  }
+  .btn-lg {
+    display: block;
+    margin: 25px 50px 25px 25px;
+    margin-left: 220px;
+    padding: 15px;
+    /* display: inline-block; */
+    height: 75px;
+    width: 250px;
+  }
+  .btn-lg:hover {
+    font-size: 25px;
+  }
+  /* PROJECT PAGE STYLING */
+  #project {
+    margin-top: 45px;
+  }
+  #project h3,
+  #project h5 {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(159, 164, 157);
+    font-family: "Dancing Script", cursive;
+  }
+  .table thead tr {
+    margin: 2px;
+    padding: 2px;
+    font-size: 20px;
+  }
+  .table td span {
+    display: block;
+  }
+  .project-grid {
+    margin-bottom: 40px;
+    padding: 20px;
+    height: 300px;
+    width: 350px;
+  }
+  .project-grid h3 {
+    margin-top: -5px;
+    font-weight: bold;
+  }
+  .zoom:hover {
+    transition: transform 0.2s;
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8*/
+    transform: scale(1.05);
+  }
+  .modal-body img {
+    margin-left: 90px;
+    height: 250px;
+    width: 300px;
+  }
+  /* CONTACT AND FOOTER STYLING */
+  .areaMap {
+    margin-top: 30px;
+    margin-left: 150px;
+    line-height: 50px;
+  }
+  #contactDetails {
+    margin: auto;
+    width: 600px;
+    height: 520px;
+  }
+  /*#contactIcon {
+    margin-top: -20px;
+    margin-left: -1px;
+  }
+  #contactLinks {
+    margin-left: -5px;
+    margin-top: 130px;
+  }
+  #contactIcon li,
+  #contactLinks li {
+    margin: 5px;
+    padding: 20px;
+    height: 100px;
+  }
+  #contactIcon li,
+  #contactLinks li {
+    list-style: none;
+    float: left;
+    margin-top: 100px;
+    margin-left: 145px;
+  } */
+  .footer {
+    display: block;
+    position: relative;
+    height: 100px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat-x;
+    padding: 7em 0;
+    clear: both;
+  }
+  #footer {
+    height: 150px;
+  }
+  #footer {
+    margin-top: 10px;
+  }
+  #footer p .block {
+    margin: 10px 5px;
+    padding: 10px 2px 10px;
+    font-size: 23px;
+  }
+  .scrollToTop {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 20px;
+  }
+  .scrollToTop:hover {
+    font-size: 30px;
+  }
+}

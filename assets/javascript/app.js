@@ -1,6 +1,17 @@
 $(document).ready(function() {
   console.log("document loaded");
   checkWindowSize();
+  //Show hide button on scroll
+  $(window).scroll(function() {
+    if ($(this).scrollTop() > 200) {
+      $(".scrollToTop").show();
+    } else {
+      $(".scrollToTop").hide();
+    }
+  });
+  $(".scrollToTop").click(function() {
+    $("html,body").animate({ scrollTop: 0 }, 5000);
+  });
   $("#fun").hover(
     function() {
       $("#fun-pop").show();
@@ -131,26 +142,27 @@ $(document).ready(function() {
   });
 
   //For automatic slideshow
-  var myIndex = 0;
-  carousel();
+  // var myIndex = 0;
+  // carousel();
 
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none";
-    }
-    myIndex++;
-    if (myIndex > x.length) {
-      myIndex = 1;
-    }
-    x[myIndex - 1].style.display = "block";
-    setTimeout(carousel, 5000);
-  }
+  // function carousel() {
+  //   var i;
+  //   var x = document.getElementsByClassName("mySlides");
+  //   for (i = 0; i < x.length; i++) {
+  //     x[i].style.display = "none";
+  //   }
+  //   myIndex++;
+  //   if (myIndex > x.length) {
+  //     myIndex = 1;
+  //   }
+  //   x[myIndex - 1].style.display = "block";
+  //   setTimeout(carousel, 5000);
+  // }
   $(window).on("scroll", function() {
     if ($(window).scrollTop()) {
       $("nav").addClass("yellow");
       $(".menu-1").hide();
+      $(".menu-icon").hide();
       $("#main-heading").hide();
       $("#links").hide();
     } else {
@@ -158,6 +170,11 @@ $(document).ready(function() {
       $("#main-heading").show();
       $(".menu-1").show();
       $("#links").show();
+      if ($(window).width() >= 769) {
+        $(".menu-icon").hide();
+      } else {
+        $(".menu-icon").show();
+      }
     }
   });
   function checkWindowSize() {
