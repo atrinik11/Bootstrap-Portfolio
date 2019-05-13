@@ -1,6 +1,7 @@
 $(document).ready(function() {
   console.log("document loaded");
   checkWindowSize();
+
   //Show hide button on scroll
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
@@ -12,6 +13,7 @@ $(document).ready(function() {
   $(".scrollToTop").click(function() {
     $("html,body").animate({ scrollTop: 0 }, 5000);
   });
+  //Show hide projects on click
   $("#fun").hover(
     function() {
       $("#fun-pop").show();
