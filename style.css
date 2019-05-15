@@ -174,7 +174,8 @@ a:focus {
   outline: none;
   text-decoration: none;
 }
-nav ul li a {
+nav ul li a,
+#google_translate_element {
   font-size: 18px;
   padding: 5px 10px;
   color: rgba(168, 219, 214, 1);

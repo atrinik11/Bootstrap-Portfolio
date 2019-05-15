@@ -211,7 +211,7 @@ $(document).ready(function() {
     $("#nyt1").hide();
     $("#clicky1").hide();
     $("#burger1").hide();
-    $("#cat").sho();
+    $("#cat").show();
     $("#liri1").hide();
     $("#crystal").hide();
     $("#train").hide();
