@@ -89,13 +89,11 @@
                   Linkedin
                 </button>              
               </a>
-              <!-- <br />-->
               <a href="https://github.com/atrinik11" target="_blank">
                 <button class="btn btn-lg center2" id="linkBtn2">
                   GitHub
                 </button>
               </a>
-              <!-- <br /> -->
               <a href="https://docs.google.com/document/d/1R_lqs2Zr7KP2DGsBewy6zUPfKQDHz-0UHACJ7DuMqUc/view?usp=sharing"            target="_blank">
                 <button class="btn btn-lg center3" id="linkBtn3">
                   Resume
@@ -111,35 +109,34 @@
         <div class="container">
           <h3 style = "text-align:center">My Work</h3>
           <div>
-            <h5>Technical Skills</h5>
+            <h5 class='allSkills'>Technical Skills</h5>
             <table class="table table-bordered table-sm">
               <tbody>
                 <tr>
                   <th>FrontEnd: </th>
-                  <td><i class="devicon-html5-plain-wordmark"></i><span>HTML5</span></td>
-                  <td><i class="devicon-sass-original colored"></i><span>Sass</span></td>
-                  <td><i class="devicon-css3-plain-wordmark"></i><span>CSS3</span></td>
-                  <td><i class="devicon-bootstrap-plain-wordmark"></i><span>Bootstrap-4</span></td>
-                  <td><i class="devicon-react-original colored"></i><span>React JS</span></td>
-                  <td><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></td>
-                  <td><i class="devicon-jquery-plain-wordmark"></i><span>jQuery</span></td>                  
+                  <td class='htmlIcon'><i class="devicon-html5-plain-wordmark"></i><span>HTML5</span></td>
+                  <td class='sassIcon'><i class="devicon-sass-original colored"></i><span>Sass</span></td>
+                  <td class='cssIcon'><i class="devicon-css3-plain-wordmark"></i><span>CSS3</span></td>
+                  <td class='bootstrap'><i class="devicon-bootstrap-plain-wordmark"></i><span>Bootstrap-4</span></td>
+                  <td class='reactIcon'><i class="devicon-react-original colored"></i><span>React JS</span></td>
+                  <td class='jsIcon'><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></td>
+                  <td class='jqIcon'><i class="devicon-jquery-plain-wordmark"></i><span>jQuery</span></td>                  
                 </tr>
                 <tr>
                   <th>BackEnd: </th>
-                  <td><i class="devicon-nodejs-plain"></i><span>Node JS</span></td>
-                  <td><i class="devicon-express-original"></i><span>Express JS</span></td>
-                  <td><i class="devicon-mysql-plain-wordmark colored"></i><span>MySQL</span></td>
-                  <td><i class="devicon-mongodb-plain-wordmark colored"></i><span>MongoDB</span></td>
-                  <td><i class="devicon-sequelize-plain colored"></i></i><span>Sequelize</span></td>        
+                  <td class='nodeIcon'><i class="devicon-nodejs-plain"></i><span>Node JS</span></td>
+                  <td class='expressIcon'><i class="devicon-express-original"></i><span>Express JS</span></td>
+                  <td class='sqlIcon'><i class="devicon-mysql-plain-wordmark colored"></i><span>MySQL</span></td>
+                  <td class='mongoIcon'><i class="devicon-mongodb-plain-wordmark colored"></i><span>MongoDB</span></td>
+                  <td class='sequeIcon'><i class="devicon-sequelize-plain colored"></i></i><span>Sequelize</span></td>        
                 </tr>
                 <tr>
                   <th>Tools </th>
-                  <td><i class="devicon-git-plain-wordmark colored"></i><span>Git</span></td>
-                  <td><i class="devicon-github-plain-wordmark"></i><span>GitHub</span></td>
-                  <td><i class="devicon-heroku-original-wordmark"></i><span>Heroku</span></td>
-                  <td><i class="devicon-mocha-plain colored"></i><span>Mocha</span></td>
-                  <td><i class="devicon-travis-plain colored"></i><span>Travis</span></td>
-                  <td><i class="devicon-mocha-plain colored"><span>Chai</span></i></td>                  
+                  <td class='gitIcon'><i class="devicon-git-plain-wordmark colored"></i>/<i class="devicon-github-plain-wordmark"></i><span>Git/GitHub</span></td>                  
+                  <td class='herokuIcon'><i class="devicon-heroku-original-wordmark"></i><span>Heroku</span></td>
+                  <td class='mochaIcon'><i class="devicon-mocha-plain colored"></i><span>Mocha</span></td>
+                  <td class='travisIcon'><i class="devicon-travis-plain colored"></i><span>Travis</span></td>
+                  <td class="chaiIcon"><i class="devicon-mocha-plain colored"><span>Chai</span></i></td>                  
                 </tr>
               </tbody>
             </table>
@@ -726,51 +723,46 @@
         </div>        
         <div id="contactDetails" class="col-sm-12 col-md-12 col-lg-6 ">
           <p class="text-center">Connect with me</p>
-          <div id= 'contactIcon'>
-            <!-- <ul> -->
-              <li>
-                <a href="tel:14123393229">
-                  <i class="fas fa-phone"></i>
-                  <span>Mobile</span>                  
-                </a>
-              </li>
-              <li>
-                <a href="mailto:reenam2017@gmail.com">
-                  <i class="fas fa-at"></i>
-                  <span>Email</span>
-                </a>
-              </li>
-              <li>
-                <a href="skype:reenam2017@gmail.com?call">
-                    <i class="fab fa-skype"></i>
-                  <span>Skype</span>
-                </a>
-              </li>
-            <!-- </ul> -->
+          <div id= 'contactIcon'>            
+            <li>
+              <a href="tel:14123393229">
+                <i class="fas fa-phone"></i>
+                <span>Mobile</span>                  
+              </a>
+            </li>
+            <li>
+              <a href="mailto:reenam2017@gmail.com">
+                <i class="fas fa-at"></i>
+                <span>Email</span>
+              </a>
+            </li>
+            <li>
+              <a href="skype:reenam2017@gmail.com?call">
+                <i class="fab fa-skype"></i>
+                <span>Skype</span>
+              </a>
+            </li>
           </div>
           <div id='contactLinks'>
             <li>
-            <a href="https://www.linkedin.com/in/rmahapatra" target="_blank">
-              <i class="fab fa-linkedin"></i>
+              <a href="https://www.linkedin.com/in/rmahapatra" target="_blank">
+                <i class="fab fa-linkedin"></i>
                 <span>Linkedin</span>
-            </a>
-          </li>
-            <!-- <br />-->
+              </a>
+            </li>            
             <li>
-            <a href="https://github.com/atrinik11" target="_blank">
-              <i class="fab fa-github-alt"></i>
+              <a href="https://github.com/atrinik11" target="_blank">
+                <i class="fab fa-github-alt"></i>
                 <span>GitHub</span>
-            </a>
-          </li>
-            <!-- <br /> -->
+              </a>
+            </li>
             <li>
-            <a href="https://docs.google.com/document/d/1R_lqs2Zr7KP2DGsBewy6zUPfKQDHz-0UHACJ7DuMqUc/view?usp=sharing"             target="_blank">
-              <i class="fas fa-link"></i>
+              <a href="https://docs.google.com/document/d/1R_lqs2Zr7KP2DGsBewy6zUPfKQDHz-0UHACJ7DuMqUc/view?usp=sharing"             target="_blank">
+                <i class="fas fa-link"></i>
                 <span>Resume</span>
-            </a>
-          </li>
-          </div>          
-          
+              </a>
+            </li>
+          </div>                    
         </div>
       </div>
       <footer id="footer" role="contentinfo">

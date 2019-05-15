@@ -292,8 +292,21 @@ nav ul li.active > a {
 #project h5 {
   font-family: "Dancing Script", cursive;
 }
+.allSkills {
+  cursor: pointer;
+}
 .table td span {
   display: none;
+}
+.table tbody td {
+  cursor: pointer;
+}
+.table tbody td:active,
+.table tbody td:focus,
+.table tbody td:hover {
+  border: 2px solid rgb(168, 219, 214);
+  font-weight: bold;
+  background-color: white;
 }
 .project-grid {
   position: fixed;
@@ -397,7 +410,6 @@ nav ul li.active > a {
 /** CONTACT PAGE STYLING **/
 #contact {
   height: auto;
-  width: 100%;
   background-color: rgb(205, 164, 80);
 }
 .areaMap {
