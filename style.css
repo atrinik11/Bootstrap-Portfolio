@@ -190,7 +190,7 @@ nav ul li.active > a {
 }
 #home-scroll {
   position: relative;
-  width: 100%;
+  /* width: 100%; */
   background-image: linear-gradient(to top left, rgb(1, 6, 29), white);
 }
 #homeImg,
@@ -204,7 +204,7 @@ nav ul li.active > a {
   font-size: 20px;
 }
 #homeImg {
-  margin: 0 10px;
+  /* margin: 0 10px; */
   height: auto;
   font-family: "Dancing Script", cursive;
   background-color: rgb(216, 67, 78);
@@ -223,10 +223,13 @@ nav ul li.active > a {
   margin: auto;
   height: 60px;
 }
+.homeImg p {
+  text-align: justify;
+}
 .resume1 {
   display: block;
   margin: 0 auto;
-  margin-left: 130px;
+  margin-left: 150px;
   font-size: 25px;
   color: white;
   background-color: transparent;
