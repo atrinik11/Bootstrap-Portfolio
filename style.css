@@ -621,7 +621,22 @@ nav ul li.active > a {
   }
   #contactIcon li:hover,
   #contactLinks li:hover {
-    box-shadow: none;
+    font-weight: bold;
+    /* box-shadow: 5px 5px 5px rgb(82, 82, 82); */
+    background-image: radial-gradient(
+      circle,
+      rgb(71, 157, 232),
+      mediumaquamarine
+    );
+  }
+  #contactIcon li:hover {
+    font-weight: bold;
+    /* box-shadow: 5px 5px 5px rgb(82, 82, 82); */
+    background-image: radial-gradient(
+      circle,
+      /* rgb(240, 109, 114), */ mediumaquamarine,
+      rgb(240, 109, 114)
+    );
   }
   #contactIcon li i,
   #contactLinks li i {
@@ -766,6 +781,10 @@ nav ul li.active > a {
   .menu-icon {
     display: none;
   }
+  /* .trans {
+    right: 15px;
+    margin-bottom: -220px;
+  } */
   /* HOME PAGE STYLING */
   #homeImg,
   #linksTo {

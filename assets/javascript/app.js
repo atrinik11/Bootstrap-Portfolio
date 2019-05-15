@@ -1,7 +1,7 @@
 $(document).ready(function() {
   console.log("document loaded");
   checkWindowSize();
-
+  googleTranslateElementInit();
   //Show hide button on scroll
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
@@ -255,6 +255,54 @@ $(document).ready(function() {
     $("#hangman").hide();
     $("#psychic").hide();
   });
+  $(".mochaIcon").click(function() {
+    $("#nyt1").hide();
+    $("#clicky1").hide();
+    $("#burger1").hide();
+    $("#cat").hide();
+    $("#liri1").hide();
+    $("#crystal").hide();
+    $("#train").hide();
+    $("#friend").hide();
+    $("#bamazon1").hide();
+    $("#fun").hide();
+    $("#gif").hide();
+    $("#starwar").hide();
+    $("#hangman").hide();
+    $("#psychic").hide();
+  });
+  $(".travisIcon").click(function() {
+    $("#nyt1").hide();
+    $("#clicky1").hide();
+    $("#burger1").hide();
+    $("#cat").hide();
+    $("#liri1").hide();
+    $("#crystal").hide();
+    $("#train").hide();
+    $("#friend").hide();
+    $("#bamazon1").hide();
+    $("#fun").hide();
+    $("#gif").hide();
+    $("#starwar").hide();
+    $("#hangman").hide();
+    $("#psychic").hide();
+  });
+  $(".chaiIcon").click(function() {
+    $("#nyt1").hide();
+    $("#clicky1").hide();
+    $("#burger1").hide();
+    $("#cat").hide();
+    $("#liri1").hide();
+    $("#crystal").hide();
+    $("#train").hide();
+    $("#friend").hide();
+    $("#bamazon1").hide();
+    $("#fun").hide();
+    $("#gif").hide();
+    $("#starwar").hide();
+    $("#hangman").hide();
+    $("#psychic").hide();
+  });
   //Show hide projects on click
   $("#fun").hover(
     function() {
@@ -385,23 +433,14 @@ $(document).ready(function() {
     $("#main-heading").hide();
   });
 
-  //For automatic slideshow
-  // var myIndex = 0;
-  // carousel();
-
-  // function carousel() {
-  //   var i;
-  //   var x = document.getElementsByClassName("mySlides");
-  //   for (i = 0; i < x.length; i++) {
-  //     x[i].style.display = "none";
-  //   }
-  //   myIndex++;
-  //   if (myIndex > x.length) {
-  //     myIndex = 1;
-  //   }
-  //   x[myIndex - 1].style.display = "block";
-  //   setTimeout(carousel, 5000);
+  //translating to different language
+  // function googleTranslateElementInit() {
+  //   new google.translate.TranslateElement(
+  //     { pageLanguage: "en" },
+  //     "google_translate_element"
+  //   );
   // }
+
   $(window).on("scroll", function() {
     if ($(window).scrollTop()) {
       $("nav").addClass("yellow");
