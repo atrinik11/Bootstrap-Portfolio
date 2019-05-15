@@ -1,7 +1,6 @@
 $(document).ready(function() {
   console.log("document loaded");
   checkWindowSize();
-  googleTranslateElementInit();
   //Show hide button on scroll
   $(window).scroll(function() {
     if ($(this).scrollTop() > 200) {
@@ -432,15 +431,6 @@ $(document).ready(function() {
     $("nav ul").toggleClass("showing");
     $("#main-heading").hide();
   });
-
-  //translating to different language
-  // function googleTranslateElementInit() {
-  //   new google.translate.TranslateElement(
-  //     { pageLanguage: "en" },
-  //     "google_translate_element"
-  //   );
-  // }
-
   $(window).on("scroll", function() {
     if ($(window).scrollTop()) {
       $("nav").addClass("yellow");
