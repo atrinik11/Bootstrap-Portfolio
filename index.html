@@ -4,14 +4,9 @@
     <link rel='shortcut icon' href="assets/images/favicon.png"/>
     <title>Reena's Portfolio</title>
     <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale = 1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"/>
     <meta name="Reena Mahapatra" content="Portfolio" />
-    <!-- Link for the font style -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Contrail+One|Philosopher"
-      rel="stylesheet"
-    />
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <!-- Link to the bootstrap -->
     <link
@@ -39,42 +34,91 @@
     />
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <!-- Theme style -->
+    <link rel='stylesheet' href="reset.css"/>
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <div id="page">
+      <header>
+        <nav>
+          <div class="menu-icon"><i class="fa fa-bars fa-2x"></i></div>
+          <div class="logo">RM</div>
+          <div class="menu-1">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#project">Work</a></li>
+              <li><a href="index.html#about-page">About</a></li>
+              <li><a href="index.html#contact">Contacts</a></li>              
+            </ul>
+          </div>
+        </nav>        
+      </header>
       <!-- HOME PAGE -->
-      
-      <div id="main-page">
-        <div class="heading ">
-            <h1 class='text-center typing'>Reena Mahapatra</h1>
+      <div id="home-scroll">
+        <div class="container">
+          <div class="row">
+            <div id="homeImg" class="col-12">    
+              <div id="welcomeText"></div>              
+              <div id ='introText1'></div>
+              <div id ='introText2'></div>
+              <div id='resumeBtn' class="col-12"></div>              
+            </div>
+          </div>     
+        </div>   
+      </div>
+      <!-- END OF HOME PAGE -->
+      <!-- WORK PAGE -->
+      <div id="project">
+        <div class="container">
+          <h3 style = "text-align:center">My Work</h3>          
+          <div class='row' id='projectDisplay'></div>
+        </div>
+      </div>
+      <!-- END OF WORK PAGE -->      
+      <!-- ABOUT PAGE -->
+      <div id='about-page'>
+        <div class='row container'>
+          <div class='col-sm-12 col-md-6 col-lg-6'>
+              <div id='aboutHeader'></div>
+              <div id='imageDisplay'></div>
+              <div id='aboutDetails'></div>              
+          </div>
+          <div class ='col-sm-12 col-md-6 col-lg-6'>
+            <div id='skillList'></div>
+          </div>
         </div>        
-        <div class="row">
-            <div id="aboutPage" class="col-sm-12 col-md-12 col-lg-6"> 
-                <a href="main.html#home-scroll">
-                    <div class='col-12 aboutInner text-center typing'>
-                        About 
-                    </div>
-                </a>
-            </div>
-            <div id= "workPage" class='col-sm-12 col-md-12 col-lg-6'>
-                <a href='main.html#project'>
-                    <div class='col-12 workInner text-center typing'>
-                        Work
-                    </div>
-                </a>
-            </div>
+      </div>
+      <!-- END OF ABOUT PAGE -->
+      <!-- CONTACT & FOOTER PAGE -->
+      <div id='contact' class='row'>
+        <div id='contactHeader'></div>
+        <div class="col-sm-12 col-md-12 col-lg-6">
+          <div id='areaMap' class='row'></div>
+        </div>        
+        <div class="col-sm-12 col-md-12 col-lg-6 ">
+            <div id='contactDetails' class='row'></div>                 
         </div>
-        <div class="row">            
-            <div id="contactPage" class="col-sm-12 col-md-12 col-lg-6">
-                <a href="main.html#contact">
-                    <div class='col-12 contactInner text-center typing'>
-                      Connect
-                    </div>
-                </a>            
+      </div>
+      <!-- FOOTER PAGE -->
+      <footer id="footer" role="contentinfo">        
+        <div class="container  text-center">
+          <div class="row">
+            <div class = "col-12">
+              <p>
+                <small class="block">&copy; Rights Reserved.<br>
+                <small class="block">Designed by <a href="index.html#about-page">Reena Mahapatra</a>
+              </p>
             </div>
+          </div>
         </div>
+      </footer>
     </div>
+    <section></section>
+    <a href="#" class="scrollToTop">
+      <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+          
     <!-- Optional JavaScript -->
     <!-- JQuery first,  then Popper.js then Bootstrap JS -->
     <script
@@ -92,6 +136,6 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
-    <script src="../assets/javascript/app.js"></script>
+    <script src="assets/javascript/app.js"></script>
   </body>
 </html>
