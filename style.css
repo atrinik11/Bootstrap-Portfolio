@@ -411,13 +411,13 @@ nav ul li.active > a {
 }
 #contactIcon {
   position: absolute;
-  margin-top: 20px;
+  margin-top: 30px;
   z-index: 100;
 }
 #contactIcon li {
   margin-bottom: -250px;
   list-style: none;
-  margin: 0 50px;
+  margin: 0 30px;
 }
 #contactIcon li,
 #contactLinks li {
@@ -426,13 +426,16 @@ nav ul li.active > a {
   font-size: 30px;
   color: rgb(72, 186, 170);
 }
+#contactIcon {
+  margin-left: 45px;
+}
 #contactLinks {
   margin-top: 90px;
-  margin-left: 3px;
+  margin-left: 50px;
   list-style: none;
 }
 #contactLinks li {
-  margin: 0 50px;
+  margin: 0 30px;
 }
 .fa-linkedin,
 .fa-github,
@@ -605,7 +608,7 @@ nav ul li.active > a {
   }
   #contactIcon,
   #contactLinks {
-    margin-left: 150px;
+    margin-left: 80px;
   }
   #contactIcon li,
   #contactLinks li {
