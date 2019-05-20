@@ -164,14 +164,16 @@ $(document).ready(function() {
 
   //HOME PAGE
   //Dynamically renders the introductory text
+
   function introPage() {
-    var headerText = "<h1>Hi, Welcome To My Page!!</h1>";
+    var headerText = "<span>Hi, Welcome To My Page!!</span>";
     var introText1 =
-      "<p id='firstLine'>I'm Reena Mahapatra, determined and resourceful Full Stack Developer.</p>";
+      "<p id='firstLine'><span>I'm Reena Mahapatra</span>, determined and resourceful Full Stack Developer.</p>";
     var introText2 =
       "<p id='secondLine'>My focus as a coder is to write simple, clean and dynamic codes with interactive User Interface.</p>";
     var resumeBtn =
       " <a href='https://docs.google.com/document/d/1R_lqs2Zr7KP2DGsBewy6zUPfKQDHz-0UHACJ7DuMqUc/view?usp=sharing'            target='_blank'><button class='resume'>Resume</button></a>";
+
     document.getElementById("welcomeText").innerHTML = headerText;
     document.getElementById("introText1").innerHTML = introText1;
     document.getElementById("introText2").innerHTML = introText2;
@@ -263,7 +265,7 @@ $(document).ready(function() {
   function aboutPage() {
     var aboutHeader = `<div class='row'><div class='col-12'><h3>A Little About Me</h3>
     </div></div>`;
-    var selfImage = `<img src='assets/images/self.jpg' id='selfImg'>`;
+    var selfImage = `<div><img src='assets/images/self.jpg' id='selfImg'></div>`;
     var aboutSelf = `<p>I'm determined and resourceful Full Stack Developer. Life long learner and curious to learn and excel on new things. My focus as a coder is to write simple, clean and dynamic codes. Self motivated with good and positive attitude with proven ability to excel under pressure. Able to work in team and independently. Natural ability to scan, analyze and solve problems.
     </p><br><p>When I'm not coding:</p><br><p>I explore and learn new things with my family, learn new cooking skills, so I can persuade my family to allow me extra time to code :)
     </p><br><p>You'll find me sorting, arranging and cleaning my home. Visualizing and implementing new ways to arrange furnitures and accessories to give new dimension and look.</p><br><p>
@@ -328,7 +330,6 @@ $(document).ready(function() {
       $("#linkBtn3").removeClass(".center3");
     }
   }
-  // TextStyle();
   checkWindowSize();
   introPage();
   iconDisplay(iconList);
