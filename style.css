@@ -15,12 +15,12 @@ body {
   margin: 0;
   padding: 0;
   background-size: contain;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: lighter;
   font-size: 16px;
   line-height: 1.7em;
   color: #828282;
-  background: #fff;
+  background: tan;
 }
 html {
   -webkit-text-size-adjust: none;
@@ -34,7 +34,7 @@ html {
 }
 #main-page h1,
 #main-page h2 {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", serif;
 }
 /* index page animation effect */
 .typing {
@@ -68,6 +68,31 @@ html {
   }
 }
 /* end of index page animation effect */
+
+/* Styling of Bouncing effect of the down arrow  */
+#arrowIndicator {
+  position: absolute;
+  left: 50%;
+  animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  display: none;
+}
+@keyframes bounce {
+  0% {
+    bottom: 5px;
+  }
+  25%,
+  75% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 20px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+/* End of Styling of Bouncing effect of the down arrow  */
 .heading {
   height: 100px;
 }
@@ -136,7 +161,7 @@ nav ul {
   *display: inline;
   width: 100%;
   height: 100%;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Playfair Display", serif;
   letter-spacing: 0.3em;
   line-height: 70px;
   transition: all 0.2s ease-out;
@@ -174,8 +199,12 @@ nav ul li.active > a {
 }
 #home-scroll {
   position: relative;
-  height: 650px;
+  height: 450px;
   background-color: white;
+}
+#home-scroll .container,
+#home-scroll .row {
+  height: 100%;
 }
 #homeImg,
 #linksTo,
@@ -185,11 +214,10 @@ nav ul li.active > a {
   font-size: 20px;
 }
 #homeImg {
-  height: 100%;
+  margin-top: 40px;
   font-family: "Playfair Display", serif;
   background-color: white;
 }
-
 #homeImg h3,
 #project h3 {
   font-family: "Playfair Display", serif;
@@ -210,9 +238,14 @@ nav ul li.active > a {
 }
 #introText1,
 #introText2 {
-  margin-top: 20px;
   font-size: 20px;
   letter-spacing: 1px;
+}
+#introText1 {
+  margin-top: 50px;
+}
+#introText2 {
+  margin-top: 20px;
 }
 #resumeBtn {
   margin-top: 75px;
@@ -226,6 +259,10 @@ nav ul li.active > a {
   color: white;
   background-color: rgb(72, 186, 170);
   cursor: pointer;
+}
+
+#arrowIndicator i {
+  font-size: 30px;
 }
 /** WORK PAGE STYLING **/
 #project {
@@ -243,17 +280,18 @@ nav ul li.active > a {
 #project h5 {
   display: block;
   color: rgb(72, 186, 170);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Playfair Display", serif;
 }
 .allSkills {
   cursor: pointer;
 }
 .card {
   margin: 5px 0;
-  height: 375px;
+  height: 370px;
 }
 .cardImg {
   position: relative;
+  /* height: 300px; */
 }
 .card-img-top {
   margin: 0;
@@ -262,7 +300,7 @@ nav ul li.active > a {
   left: 0;
   overflow: hidden;
   display: block;
-  height: 275px;
+  height: 300px;
   width: 100%;
   border: none;
   background-color: white;
@@ -279,7 +317,7 @@ nav ul li.active > a {
   width: 100%;
   opacity: 0;
   transition: 0.5s ease;
-  background-color: rgba(119, 117, 117, 1);
+  background-color: rgb(155, 152, 152);
 }
 .cardImg:hover .overlay {
   opacity: 1;
@@ -294,22 +332,24 @@ nav ul li.active > a {
   font-size: 15px;
   color: black;
 }
-.overlay .description p {
+.description p {
   clear: both;
   padding: 2px;
   margin: 5px;
   margin-bottom: -15px;
-  font-size: 18px;
+  font-size: 15px;
   color: black;
 }
-.overlay .description p {
-  font-size: 15px;
-}
-#project .techUsed {
+.description {
   margin-top: 5px;
+  padding: 3px;
 }
-.overlay .description h5,
-#project .techUsed h5 {
+.techUsed {
+  margin-top: 10px;
+  padding: 3px;
+}
+.description h5,
+.techUsed h5 {
   padding: 0 5px;
   font-size: 18px;
 }
@@ -319,13 +359,13 @@ nav ul li.active > a {
 }
 .card-title {
   margin-bottom: 0;
-  padding: 10px;
+  padding: 5px 10px;
 }
 .card-link {
   text-align: center;
 }
 .card-link a {
-  margin: 5px;
+  margin-bottom: 15px;
   padding: 5px;
   cursor: pointer;
   font-size: 15px;
@@ -366,11 +406,10 @@ nav ul li.active > a {
   width: 98%;
 }
 #aboutDetails {
-  margin-bottom: -30px;
-  /* /* padding-bottom: 10px; */
+  margin-top: 5px;
 }
 #skillList h3 {
-  margin: 15px 0;
+  margin: 35px 0;
   font-size: 20px;
   color: rgb(72, 186, 170);
 }
@@ -522,9 +561,7 @@ nav ul li.active > a {
     height: 680px;
   }
   #homeImg {
-    margin-top: 810px;
-    height: 350px;
-    vertical-align: middle;
+    margin-top: 150px;
   }
   #homeImg .resume1 {
     margin-top: 30px;
@@ -537,6 +574,13 @@ nav ul li.active > a {
   #introText2 {
     font-size: 23px;
     letter-spacing: 1px;
+  }
+  #arrowIndicator {
+    display: block;
+    margin-top: 30px;
+  }
+  #arrowIndicator i {
+    font-size: 30px;
   }
   /** WORK PAGE STYLING **/
   #project {
@@ -566,7 +610,7 @@ nav ul li.active > a {
     padding: 5px;
     cursor: pointer;
   }
-  .overlay .description p {
+  .description p {
     font-size: 15px;
   }
   /** END OF WORK PAGE STYLING **/
@@ -574,9 +618,16 @@ nav ul li.active > a {
   #aboutHeader h3 {
     left: -20px;
   }
+  #imageDisplay {
+    height: 250px;
+  }
   #selfImg {
-    height: 210px;
+    height: 100%;
     width: 100%;
+  }
+  #aboutDetails {
+    margin-top: 5px;
+    padding-bottom: 10px;
   }
   #skillList h3 {
     margin-top: 85px;
@@ -596,7 +647,6 @@ nav ul li.active > a {
     padding: 10px;
     background-color: white;
     zoom: 1;
-    cursor: pointer;
   }
   /* END OF ABOUT PAGE STYLING */
   /** CONTACT PAGE STYLING **/
@@ -750,6 +800,7 @@ nav ul li.active > a {
     height: 830px;
   }
   #homeImg {
+    margin-top: 180px;
     padding: 20px;
     height: auto;
   }
@@ -770,6 +821,13 @@ nav ul li.active > a {
     width: 120px;
     height: 50px;
   }
+  #arrowIndicator {
+    display: block;
+    margin-top: 200px;
+  }
+  #arrowIndicator i {
+    font-size: 40px;
+  }
   #project h3 {
     margin: 20px 0;
     font-size: 40px;
@@ -779,7 +837,7 @@ nav ul li.active > a {
   #project h5 {
     display: block;
     color: rgb(72, 186, 170);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Playfair Display", serif;
   }
   #project h5 {
     clear: both;
@@ -809,8 +867,9 @@ nav ul li.active > a {
   .card-img-top {
     height: 325px;
   }
-  .overlay .description p {
-    font-size: 15px;
+  .description p,
+  .projectTech li {
+    font-size: 13px;
   }
   .card-link a {
     margin-bottom: 15px;

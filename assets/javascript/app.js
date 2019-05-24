@@ -23,7 +23,7 @@ $(document).ready(function() {
       img: "assets/images/nyt.png",
       tech: ["Bootstrap", "CSS", "ReactJS", "MongoDB"],
       desc:
-        "A MERN stack application that lets users search for articles from new york times.",
+        "A MERN stack application that lets users search for articles from New York Times.",
       deploy: "https://thawing-harbor-66764.herokuapp.com/",
       code: "https://github.com/atrinik11/nytreact"
     },
@@ -62,7 +62,7 @@ $(document).ready(function() {
       code: "https://github.com/atrinik11/liri-node-app"
     },
     {
-      title: "Crystal",
+      title: "Guessing Game",
       img: "assets/images/crystal1.png",
       tech: ["HTML", "Bootstrap", "CSS", "JavaScript"],
       desc:
@@ -84,7 +84,7 @@ $(document).ready(function() {
       img: "assets/images/friendfinder.png",
       tech: ["HTML", "Bootstrap", "CSS", "JavaScript", "NodeJS", "ExpressJS"],
       desc:
-        "A compatibility-based 'Friend Finder' app -- basically and only a friend finder app. This full-stack site will take in results from the users' surveys, and will display the name and picture of the user with the best overall match.",
+        "A compatibility-based 'Friend Finder' app -- basically a friend finder app. This full-stack site will take in results from the users' surveys, and will display the name and picture of the user with the best overall match.",
       deploy: "https://serene-caverns-84461.herokuapp.com/",
       code: "https://github.com/atrinik11/Friend-finder"
     },
@@ -93,7 +93,7 @@ $(document).ready(function() {
       img: "assets/images/bamazon.png",
       tech: ["JavaScript", "NodeJS", "MySQL"],
       desc:
-        "Created an Amazon-like storefront with the MySQL database. The app takes orders from customers and deplete stock from the store's inventory.",
+        "Created an Amazon-like storefront with the MySQL database. The app takes orders from customers and deplete Stock from the store's inventory.",
       code: "https://github.com/atrinik11/Bamazon"
     },
     {
@@ -108,7 +108,7 @@ $(document).ready(function() {
         "Google Maps"
       ],
       desc:
-        "This application developed for users to make their their vacation organized and stress free.",
+        "This application developed for users to make their vacation organized and stress-free.",
       deploy: "https://atrinik11.github.io/Fun-Finder/",
       code: "https://github.com/atrinik11/Fun-Finder"
     },
@@ -126,7 +126,7 @@ $(document).ready(function() {
       img: "assets/images/starwar.png",
       tech: ["HTML", "Bootstrap", "CSS", "jQuery"],
       desc:
-        "This Game is developed using JQuery. The game is played by attacking the opponent using the attack button. Once the player defeat the defender, it can choose another defender. But once the player is defeated, the game is over. ",
+        "This game is developed using jQuery. The game is played by attacking the opponent using the attack button. Once the player defeats the defender, it can choose another defender. But once the player is defeated, the game is over. ",
       deploy: "https://atrinik11.github.io/starwar/",
       code: "https://github.com/atrinik11/starwar"
     },
@@ -135,16 +135,16 @@ $(document).ready(function() {
       img: "assets/images/hangman.png",
       tech: ["HTML", "Bootstrap", "CSS", "JavaScript"],
       desc:
-        "This Hangman Game is a simple JavaScript game that allows the player to guess the word the computer chooses. When guessed correcly, the player wins and losses when all the guess are over without the correct word been discovered.",
+        "This Hangman game is a simple JavaScript game, that allows the player to guess the word the computer generated. When guessed correcly, the player wins and losses when all the guess are over without the correct word been discovered.",
       deploy: "https://atrinik11.github.io/hangman/",
       code: "https://github.com/atrinik11/hangman"
     },
     {
-      title: "Psychi",
+      title: "Psychic",
       img: "assets/images/psychic.png",
       tech: ["HTML", "Bootstrap", "CSS", "JavaScript"],
       desc:
-        "This Psychic Game is a simple JavaScript game that allows the user to guess the letter the computer has randomly generated. The user have to choose a letter from A - Z and test their psycic ability to see if they can read a computers mind!.",
+        "The Psychic game is a simple JavaScript game that allows the user to guess the letter the computer has randomly generated. The user have to choose a letter from A - Z and test their psycic ability to see if they can read a computers mind!.",
       deploy: "https://atrinik11.github.io/Psychi-Game/",
       code: "https://github.com/atrinik11/Psychi-Game"
     }
@@ -168,24 +168,25 @@ $(document).ready(function() {
   function introPage() {
     var headerText = "<span>Hi, Welcome To My Page!!</span>";
     var introText1 =
-      "<p id='firstLine'><span>I'm Reena Mahapatra</span>, determined and resourceful Full Stack Developer.</p>";
+      "<p id='firstLine'><span>I'm Reena Mahapatra</span>, a determined and resourceful Full Stack Developer.</p>";
     var introText2 =
-      "<p id='secondLine'>My focus as a coder is to write simple, clean and dynamic codes with interactive User Interface.</p>";
+      "<p id='secondLine'>My focus as a coder is to write simple, clean, and dynamic code with interactive User Interfaces.</p>";
     var resumeBtn =
       " <a href='https://docs.google.com/document/d/1R_lqs2Zr7KP2DGsBewy6zUPfKQDHz-0UHACJ7DuMqUc/view?usp=sharing'            target='_blank'><button class='resume'>Resume</button></a>";
-
+    var arrowPointer = "<i class='fas fa-angle-down'></i>";
     document.getElementById("welcomeText").innerHTML = headerText;
     document.getElementById("introText1").innerHTML = introText1;
     document.getElementById("introText2").innerHTML = introText2;
     document.getElementById("resumeBtn").innerHTML = resumeBtn;
+    document.getElementById("arrowIndicator").innerHTML = arrowPointer;
   }
   $("#homeImg").css({ width: "100%", "text-align": "center" });
-  var home = $("#homeImg").height();
-  var h = home / 2;
-  var w1 = $(window).height();
-  var w = w1 / 2;
-  var m = w - h - 275;
-  $("#homeImg").css("margin-top", m + "px");
+  // var home = $("#homeImg").height();
+  // var h = home / 2;
+  // var w1 = $(window).height();
+  // var w = w1 / 2;
+  // var m = w - h - 275;
+  // $("#homeImg").css("margin-top", m + "px");
   //giving a typing effect
   $("window").on("load", function() {
     $("#homeImg").addClass("typing");
@@ -206,15 +207,44 @@ $(document).ready(function() {
         filterTechList.push(techList);
       });
       newFilteredTechList += filterTechList.join("");
-      tile = `
+      lists[i].deploy
+        ? (tile = `
+        <div class = 'col-sm-12 col-md-6 col-lg-4 projectArea' id=${
+          lists[i].title
+        }>
+          <div class='card'>
+            <div class=cardImg>
+              <img class='card-img-top' src='${lists[i].img}' alt='${
+            lists[i].title
+          }'/>
+              <div class='overlay'>
+                <div class='description'>
+                  <h5>Description</h5>
+                  <p>${lists[i].desc}</p>
+                </div>
+                <div class='techUsed'><h5>Technology Used: </h5>
+                <ul class='projectTech'>${newFilteredTechList}</ul>
+                </div>
+              </div>
+            </div>
+            <div class='card-body'>
+              <h5 class='card-title'>${lists[i].title}</h5>  
+              <div class='card-link'>
+              <a href='${lists[i].deploy}' target='_blank'>Deploy</a>
+              <a href='${lists[i].code}' target='_blank'>GitHub</a>
+              </div>                 
+            </div>
+          </div>
+        </div>`)
+        : (tile = `
       <div class = 'col-sm-12 col-md-6 col-lg-4 projectArea' id=${
         lists[i].title
       }>
         <div class='card'>
           <div class=cardImg>
             <img class='card-img-top' src='${lists[i].img}' alt='${
-        lists[i].title
-      }'/>
+            lists[i].title
+          }'/>
             <div class='overlay'>
               <div class='description'>
                 <h5>Description</h5>
@@ -227,13 +257,13 @@ $(document).ready(function() {
           </div>
           <div class='card-body'>
             <h5 class='card-title'>${lists[i].title}</h5>  
-            <div class='card-link'>
-            <a href='${lists[i].deploy}' target='_blank'>Deploy</a>
+            <div class='card-link'>            
             <a href='${lists[i].code}' target='_blank'>GitHub</a>
             </div>                 
           </div>
         </div>
-      </div>`;
+      </div>`);
+
       console.log("tech: ", filterTechList.join(""));
       filterTechList = [];
       newFilteredTechList = "";
@@ -265,7 +295,7 @@ $(document).ready(function() {
   function aboutPage() {
     var aboutHeader = `<div class='row'><div class='col-12'><h3>A Little About Me</h3>
     </div></div>`;
-    var selfImage = `<div><img src='assets/images/self.jpg' id='selfImg'></div>`;
+    var selfImage = `<img src='assets/images/self.jpg' id='selfImg'>`;
     var aboutSelf = `<p>I'm determined and resourceful Full Stack Developer. Life long learner and curious to learn and excel on new things. My focus as a coder is to write simple, clean and dynamic codes. Self motivated with good and positive attitude with proven ability to excel under pressure. Able to work in team and independently. Natural ability to scan, analyze and solve problems.
     </p><br><p>When I'm not coding:</p><br><p>I explore and learn new things with my family, learn new cooking skills, so I can persuade my family to allow me extra time to code :)
     </p><br><p>You'll find me sorting, arranging and cleaning my home. Visualizing and implementing new ways to arrange furnitures and accessories to give new dimension and look.</p><br><p>
@@ -304,19 +334,21 @@ $(document).ready(function() {
   $(window).on("scroll", function() {
     if ($(window).scrollTop()) {
       $("nav").addClass("yellow");
-      $(".menu-1").hide();
       $(".menu-icon").hide();
       $("#main-heading").hide();
       $("#links").hide();
+      $("#arrowIndicator").hide();
     } else {
       $("nav").removeClass("yellow");
       $("#main-heading").show();
       $(".menu-1").show();
       $("#links").show();
-      if ($(window).width() >= 769) {
-        $(".menu-icon").hide();
-      } else {
+      if ($(window).width() <= 770) {
         $(".menu-icon").show();
+        $("#arrowIndicator").hide();
+      } else {
+        $(".menu-icon").hide();
+        $("#arrowIndicator").show();
       }
     }
   });
