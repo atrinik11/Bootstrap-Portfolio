@@ -69,7 +69,7 @@ html {
 }
 /* end of index page animation effect */
 
-/* Styling of Bouncing effect of the down arrow  */
+/* Styling of Bounce effect of the down arrow  */
 #arrowIndicator {
   position: absolute;
   left: 50%;
@@ -92,7 +92,7 @@ html {
     bottom: 0;
   }
 }
-/* End of Styling of Bouncing effect of the down arrow  */
+/* End of Styling of Bounce effect of the down arrow  */
 .heading {
   height: 100px;
 }
@@ -512,7 +512,8 @@ nav ul li.active > a {
 }
 .scrollToTop:hover {
   cursor: pointer;
-  color: white;
+  background-color: transparent;
+  color: rgb(72, 186, 170);
   font-size: 30px;
   font-weight: bold;
 }
@@ -576,7 +577,7 @@ nav ul li.active > a {
     letter-spacing: 1px;
   }
   #arrowIndicator {
-    display: block;
+    /* display: block; */
     margin-top: 30px;
   }
   #arrowIndicator i {
@@ -808,6 +809,9 @@ nav ul li.active > a {
     font-size: 40px;
     font-weight: bold;
   }
+  #introText1 span {
+    font-size: 23px;
+  }
   #introText1,
   #introText2 {
     margin-top: 30px;
@@ -845,17 +849,6 @@ nav ul li.active > a {
   .icons {
     margin: 1px 57px;
     font-size: 27px;
-  }
-  .icons:hover {
-    cursor: pointer;
-  }
-  .iconOverlay {
-    display: none;
-    font-size: 20px;
-  }
-  .iconOverlay:hover {
-    display: block;
-    zoom: 1;
   }
   #projectDisplay {
     margin-top: 50px;

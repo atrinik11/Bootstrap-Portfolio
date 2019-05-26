@@ -84,7 +84,7 @@ $(document).ready(function() {
       img: "assets/images/friendfinder.png",
       tech: ["HTML", "Bootstrap", "CSS", "JavaScript", "NodeJS", "ExpressJS"],
       desc:
-        "A compatibility-based 'Friend Finder' app -- basically a friend finder app. This full-stack site will take in results from the users' surveys, and will display the name and picture of the user with the best overall match.",
+        "A compatibility-based 'Friend Finder' app. This full-stack site will take in results from the users' surveys, and will display the name and picture of the user with the best overall match.",
       deploy: "https://serene-caverns-84461.herokuapp.com/",
       code: "https://github.com/atrinik11/Friend-finder"
     },
@@ -93,7 +93,7 @@ $(document).ready(function() {
       img: "assets/images/bamazon.png",
       tech: ["JavaScript", "NodeJS", "MySQL"],
       desc:
-        "Created an Amazon-like storefront with the MySQL database. The app takes orders from customers and deplete Stock from the store's inventory.",
+        "Created an Amazon-like storefront with the MySQL database. The app takes orders from customers and depletes Stock from the store's inventory.",
       code: "https://github.com/atrinik11/Bamazon"
     },
     {
@@ -126,7 +126,7 @@ $(document).ready(function() {
       img: "assets/images/starwar.png",
       tech: ["HTML", "Bootstrap", "CSS", "jQuery"],
       desc:
-        "This game is developed using jQuery. The game is played by attacking the opponent using the attack button. Once the player defeats the defender, it can choose another defender. But once the player is defeated, the game is over. ",
+        "This game was developed using jQuery. The game is played by attacking the opponent using the attack button. Once the player defeats the defender, it can choose another defender. But once the player is defeated, the game is over. ",
       deploy: "https://atrinik11.github.io/starwar/",
       code: "https://github.com/atrinik11/starwar"
     },
@@ -144,7 +144,7 @@ $(document).ready(function() {
       img: "assets/images/psychic.png",
       tech: ["HTML", "Bootstrap", "CSS", "JavaScript"],
       desc:
-        "The Psychic game is a simple JavaScript game that allows the user to guess the letter the computer has randomly generated. The user have to choose a letter from A - Z and test their psycic ability to see if they can read a computers mind!.",
+        "The Psychic game is a simple JavaScript game that allows the user to guess the letter the computer has randomly generated. The user has to choose a letter from A - Z and test their psycic ability to see if they can read a computers mind!",
       deploy: "https://atrinik11.github.io/Psychi-Game/",
       code: "https://github.com/atrinik11/Psychi-Game"
     }
@@ -181,13 +181,7 @@ $(document).ready(function() {
     document.getElementById("arrowIndicator").innerHTML = arrowPointer;
   }
   $("#homeImg").css({ width: "100%", "text-align": "center" });
-  // var home = $("#homeImg").height();
-  // var h = home / 2;
-  // var w1 = $(window).height();
-  // var w = w1 / 2;
-  // var m = w - h - 275;
-  // $("#homeImg").css("margin-top", m + "px");
-  //giving a typing effect
+
   $("window").on("load", function() {
     $("#homeImg").addClass("typing");
   });
@@ -320,7 +314,7 @@ $(document).ready(function() {
     <div id='contactLinks'><li><a href="https://www.linkedin.com/in/rmahapatra" target="_blank"><i class="fab fa-linkedin"></i>
             <span>Linkedin</span></a></li>            
         <li><a href="https://github.com/atrinik11" target="_blank"><i class="fab fa-github-alt"></i><span>GitHub</span></a></li>
-        <li><a href="https://docs.google.com/document/d/1R_lqs2Zr7KP2DGsBewy6zUPfKQDHz-0UHACJ7DuMqUc/view?usp=sharing target="_blank"><i class="fas fa-link"></i><span>Resume</span></a></li>
+        <li><a href='https://docs.google.com/document/d/1R_lqs2Zr7KP2DGsBewy6zUPfKQDHz-0UHACJ7DuMqUc/view?usp=sharing'            target='_blank'><i class="fas fa-link"></i><span>Resume</span></a></li>
     </div></div>`;
     document.getElementById("contactHeader").innerHTML = contactHeader;
     document.getElementById("areaMap").innerHTML = mapAdd;
