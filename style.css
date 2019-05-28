@@ -381,11 +381,11 @@ nav ul li.active > a {
   z-index: 1;
 }
 /* ABOUT PAGE STYLING */
-#about-page {
+#about {
   margin: 0;
   background-color: white;
 }
-#about-page .row {
+#about .row {
   margin: 0 auto;
 }
 #aboutHeader {

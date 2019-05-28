@@ -181,7 +181,6 @@ $(document).ready(function() {
     document.getElementById("arrowIndicator").innerHTML = arrowPointer;
   }
   $("#homeImg").css({ width: "100%", "text-align": "center" });
-
   $("window").on("load", function() {
     $("#homeImg").addClass("typing");
   });
@@ -304,7 +303,7 @@ $(document).ready(function() {
   //DYNAMICALLY RENDERING THE CONTACT ICONS
   function contactPage() {
     var contactHeader = `<h3 class="text-center">Connect with me</h3>`;
-    var mapAdd = `<div class='col-12'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225470.28811873056!2d-82.59436447200959!3d27.99471474266003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C+FL!5e0!3m2!1sen!2sus!4v1557649130632!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>`;
+    var mapAdd = `<div class='col-12'><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225470.28811873056!2d-82.59436447200959!3d27.99471474266003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2b782b3b9d1e1%3A0xa75f1389af96b463!2sTampa%2C+FL!5e0!3m2!1sen!2sus!4v1559016756512!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe></div>`;
 
     var contactDetails = `<div class='col-12'>
     <div id= 'contactIcon'><li><a href="tel:14123393229"><i class="fas fa-phone"></i><span>Mobile</span></a></li>
@@ -321,10 +320,26 @@ $(document).ready(function() {
     document.getElementById("contactDetails").innerHTML = contactDetails;
   }
 
-  $(".menu-icon").on("click", function() {
-    $("nav ul").toggleClass("showing");
-    $("#main-heading").hide();
+  // $(".menu-icon").on("click", function() {
+  //   $("nav ul").toggleClass("showing");
+  //   $("#main-heading").hide();
+  // });
+  document.querySelector(".menu-icon").addEventListener("click", function() {
+    document.querySelector("nav ul").classList.toggle("showing");
   });
+  document.querySelector("#work").addEventListener("click", function() {
+    window.location.hash = projectP;
+    document.querySelector("nav ul").classList.remove("showing");
+  });
+  document.querySelector("#aboutP").addEventListener("click", function() {
+    window.location.hash = aboutPage;
+    document.querySelector("nav ul").classList.remove("showing");
+  });
+  document.querySelector("#contactP").addEventListener("click", function() {
+    window.location.hash = contactPage;
+    document.querySelector("nav ul").classList.remove("showing");
+  });
+
   $(window).on("scroll", function() {
     if ($(window).scrollTop()) {
       $("nav").addClass("yellow");

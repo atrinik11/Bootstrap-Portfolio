@@ -43,15 +43,18 @@
   <body>
     <div id="page">
       <header>
+        <!-- <div  class="nav-toggle">
+          <div class='nav-toggle-bar'></div>
+        </div> -->
         <nav>
           <div class="menu-icon"><i class="fa fa-bars fa-2x"></i></div>
           <div class="logo">RM</div>
           <div class="menu-1">
             <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="index.html#project">Work</a></li>
-              <li><a href="index.html#about-page">About</a></li>
-              <li><a href="index.html#contact">Contacts</a></li>              
+              <li><a href="index.html" id='home'>Home</a></li>
+              <li><a href="index.html#projectP" id='work'>Work</a></li>
+              <li><a href="index.html#aboutPage" id='aboutP'>About</a></li>
+              <li><a href="index.html#contactPage" id='contactP'>Contacts</a></li>              
             </ul>
           </div>
         </nav>        
@@ -69,18 +72,22 @@
             </div>
           </div>     
         </div>   
+        <div id= 'projectP'></div>
       </div>
       <!-- END OF HOME PAGE -->
       <!-- WORK PAGE -->
+      
       <div id="project">
         <div class="container">
           <h3 style = "text-align:center">My Work</h3>          
           <div class='row' id='projectDisplay'></div>
         </div>
+        <div id='aboutPage'></div>
       </div>
+      
       <!-- END OF WORK PAGE -->      
       <!-- ABOUT PAGE -->
-      <div id='about-page'>
+      <div id='about'>
         <div class='row container'>
           <div class='col-sm-12 col-md-6 col-lg-6'>
               <div id='aboutHeader'></div>
@@ -90,8 +97,10 @@
           <div class ='col-sm-12 col-md-6 col-lg-6'>
             <div id='skillList'></div>
           </div>
-        </div>        
+        </div>
+        <div id='contactPage'></div>
       </div>
+      
       <!-- END OF ABOUT PAGE -->
       <!-- CONTACT & FOOTER PAGE -->
       <div class='container'>
@@ -112,7 +121,7 @@
             <div class = "col-12">
               <p>
                 <small class="block">&copy; Rights Reserved.<br>
-                <small class="block">Designed by <a href="index.html#about-page">Reena Mahapatra</a>
+                <small class="block">Designed by <a href="index.html#about">Reena Mahapatra</a>
               </p>
             </div>
           </div>
