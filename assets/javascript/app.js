@@ -288,10 +288,10 @@ $(document).ready(function() {
   function aboutPage() {
     var aboutHeader = `<div class='row'><div class='col-12'><h3>A Little About Me</h3>
     </div></div>`;
-    var selfImage = `<img src='assets/images/self.jpg' id='selfImg'>`;
-    var aboutSelf = `<p>I'm determined and resourceful Full Stack Developer. Life long learner and curious to learn and excel on new things. My focus as a coder is to write simple, clean and dynamic codes. Self motivated with good and positive attitude with proven ability to excel under pressure. Able to work in team and independently. Natural ability to scan, analyze and solve problems.
-    </p><br><p>When I'm not coding:</p><br><p>I explore and learn new things with my family, learn new cooking skills, so I can persuade my family to allow me extra time to code :)
-    </p><br><p>You'll find me sorting, arranging and cleaning my home. Visualizing and implementing new ways to arrange furnitures and accessories to give new dimension and look.</p><br><p>
+    var selfImage = `<img src='assets/images/selfImg1.png' id='selfImg'>`;
+    var aboutSelf = `<p>I'm a determined and resourceful Full Stack Developer and a Life long learner and curious to learn and excel on new things. My focus as a coder is to write simple, clean and dynamic code. Self-motivated with a positive attitude and a proven ability to excel under pressure. Able to work on a team and independently. Natural ability to scan, analyze and solve problems.
+    </p><br><p>When I'm not coding:</p><br><p>I explore and learn new things with my family, like learning new cooking skills, so I can persuade my family to allow me extra time to code :)
+    </p><br><p>You'll find me sorting, arranging and cleaning my home. Visualizing and implementing new ways to arrange our furniture and accessories to give a new dimension and look to our home.</p><br><p>
     You'll find me in my garden experimenting on new techniques, new layout planning, etc...Wait, for this you have to wait for my garden to be ready :)                
     </p>`;
     document.getElementById("aboutHeader").innerHTML = aboutHeader;
@@ -319,16 +319,12 @@ $(document).ready(function() {
     document.getElementById("areaMap").innerHTML = mapAdd;
     document.getElementById("contactDetails").innerHTML = contactDetails;
   }
-
-  // $(".menu-icon").on("click", function() {
-  //   $("nav ul").toggleClass("showing");
-  //   $("#main-heading").hide();
-  // });
+  // ADDING AND REMOVING TOGGLE CLASS WHEN THE HAMBURGER IS CLICKED
   document.querySelector(".menu-icon").addEventListener("click", function() {
     document.querySelector("nav ul").classList.toggle("showing");
   });
   document.querySelector("#work").addEventListener("click", function() {
-    window.location.hash = projectP;
+    window.location = "index.html#project";
     document.querySelector("nav ul").classList.remove("showing");
   });
   document.querySelector("#aboutP").addEventListener("click", function() {
@@ -339,6 +335,7 @@ $(document).ready(function() {
     window.location.hash = contactPage;
     document.querySelector("nav ul").classList.remove("showing");
   });
+  // END OF ADDING AND REMOVING TOGGLE CLASS WHEN THE HAMBURGER IS CLICKED
 
   $(window).on("scroll", function() {
     if ($(window).scrollTop()) {

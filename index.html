@@ -51,10 +51,11 @@
           <div class="logo">RM</div>
           <div class="menu-1">
             <ul>
-              <li><a href="index.html" id='home'>Home</a></li>
-              <li><a href="index.html#projectP" id='work'>Work</a></li>
-              <li><a href="index.html#aboutPage" id='aboutP'>About</a></li>
-              <li><a href="index.html#contactPage" id='contactP'>Contacts</a></li>              
+              <li><a href="index.html" id='home' onclick="scrollTo('home-scroll')">Home</a></li>
+              <li><a href="index.html#project" id='work'>Work</a></li>
+              <!-- <li id='work'  onclick='goToTarget("project")'>Work</li> -->
+              <li><a href="index.html#aboutPage" id='aboutP' onclick="scrollTo('about')">About</a></li>
+              <li><a href="index.html#contactPage" id='contactP' onclick="scrollTo('contact')">Contacts</a></li>              
             </ul>
           </div>
         </nav>        
@@ -150,6 +151,26 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
-    <script src="assets/javascript/app.js"></script>
+    <script type='text/javascript'>
+      function goToTarget(id, a) {
+        document.querySelector(id).addEventListener("click", function() {
+          var elem = document.getElementById(a);
+          var jump = elem.getBoundingClientRect().top * 0.2;
+          console.log("jump location: ", jump);
+          document.body.scrollTop += jump;
+          document.documentElement.scrollTop += jump;
+          if (!elem.lastjump || elem.lastjump > Math.abs(jump)) {
+            elem.lastjump = Math.abs(jump);
+            // setTimeout(function() {
+            //   scrollToResolver(elem);
+            // }, "100");
+          } else {
+            elem.lastjump = null;
+        }
+        document.querySelector("nav ul").classList.remove("showing");
+      });
+    }
+    </script>
+    <script type='text/javascript' src="assets/javascript/app.js"></script>
   </body>
 </html>
